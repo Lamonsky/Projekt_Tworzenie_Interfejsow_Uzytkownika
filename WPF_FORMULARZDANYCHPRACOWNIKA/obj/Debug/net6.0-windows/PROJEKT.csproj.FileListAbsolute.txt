@@ -42,3 +42,7 @@ C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FO
 C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\PROJEKT.csproj.CoreCompileInputs.cache
 C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\PROJEKT.genruntimeconfig.cache
 C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\ref\PROJEKT.dll
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\Windows\SubWindows\Dane_Firmy.g.cs
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\Windows\SubWindows\Dane_Firmy.baml
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\Windows\SubWindows\Dane_Kontrahenta.g.cs
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\Windows\SubWindows\Dane_Kontrahenta.baml

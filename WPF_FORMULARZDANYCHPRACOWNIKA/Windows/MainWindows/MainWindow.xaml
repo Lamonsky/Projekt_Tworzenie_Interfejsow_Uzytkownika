@@ -5,17 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROJEKT.Windows.MainWindows"
         mc:Ignorable="d"
-        Title="Sprzedaż" Height="900" Width="1600">
+        Title="Sprzedaż" Height="900" Width="1600" Loaded="Window_Loaded">
     <Window.Resources>
         <ResourceDictionary Source="..\..\Resources\Styles\ViewResources.xaml"/>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="25*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <TabControl Grid.Column="1" Grid.RowSpan="2">
+        <Menu Grid.Row="0">
+            <MenuItem Header="System">
+                <MenuItem Header="Wzór"/>
+            </MenuItem>
+        </Menu>
+        <TabControl Grid.Column="1" Grid.RowSpan="2" Grid.Row="1">
             <TabItem Header="Ogólne">
                 <!--//Zakładka Ogólne z Comarch XL 2022 -->
                 <Grid>
@@ -29,56 +35,70 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="15*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="5*"/>
                         <RowDefinition Height="65*"/>
                     </Grid.RowDefinitions>
-                    <Button Grid.Column="0">
+                    <Button Grid.Column="0" Margin="2,2,2,2">
                         <StackPanel>
                             <TextBlock>Kontrahenci</TextBlock>
                             <Image Source="..\..\Resources\Icons\kontrahenci.png"/>
                         </StackPanel>
+                        
                     </Button>
-                    <Button Grid.Column="1">
+                    <Button Grid.Column="1" Margin="2,2,2,2">
                         <StackPanel>
-                            <TextBlock FontSize="11" TextAlignment="Center">Towary</TextBlock>
+                            <TextBlock>Towary</TextBlock>
                             <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                         </StackPanel>
                     </Button>
-                    <Button Grid.Column="2"></Button>
-                    <Button Grid.Column="3"></Button>
-                    <Button Grid.Column="4"></Button>
-                    <Button Grid.Column="5"></Button>
-                    <Button Grid.Column="6"></Button>
-                    <Button Grid.Column="7"></Button>
-                    <Button Grid.Column="8"></Button>
-                    <Button Grid.Column="9"></Button>
-                    <Button Grid.Column="10"></Button>
-                    <Button Grid.Column="11"></Button>
-                    <Button Grid.Column="12"></Button>
-                    <Button Grid.Column="13"></Button>
-                    <Button Grid.Column="14"></Button>
-                    <Button Grid.Column="15"></Button>
-                    <Button Grid.Column="16"></Button>
-                    <Button Grid.Column="17"></Button>
-                    <Button Grid.Column="18"></Button>
-                    <Button Grid.Column="19"></Button>
-                    <Button Grid.Column="20"></Button>
-                    <Button Grid.Column="21"></Button>
+                    <Button Grid.Column="2" Margin="2,2,2,2">
+                        <StackPanel>
+                            <TextBlock>Płatności</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="3" Margin="2,2,2,2">
+                        <StackPanel>
+
+                            <TextBlock>Zapisy kasowe/bankowe</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="4" Margin="2,2,2,2">
+                        <StackPanel>
+
+                            <TextBlock>Rejestry VAT</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="5" Margin="2,2,2,2">
+                        <StackPanel>
+                            <TextBlock>Faktura sprzedaży</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="6" Margin="2,2,2,2">
+                        <StackPanel>
+                            <TextBlock>Dokumenty</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="7" Margin="2,2,2,2">
+                        <StackPanel>
+                            <TextBlock>Zamówienia</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="8" Margin="2,2,2,2">
+                        <StackPanel>
+                            <TextBlock>Terminarz</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Canvas Grid.ColumnSpan="10" Grid.Row="3"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Listy">
@@ -93,94 +113,203 @@
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
                         <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="15*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="5*"/>
                         <RowDefinition Height="65*"/>
                     </Grid.RowDefinitions>
                     <Button Grid.Column="0">
-                        
+                        <Grid>
+                            <StackPanel>
+                                <TextBlock>Kontrahenci</TextBlock>
+                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                            </StackPanel>
+                        </Grid>
                     </Button>
-                    <Button Grid.Column="1"></Button>
-                    <Button Grid.Column="2"></Button>
-                    <Button Grid.Column="3"></Button>
-                    <Button Grid.Column="4"></Button>
-                    <Button Grid.Column="5"></Button>
-                    <Button Grid.Column="6"></Button>
-                    <Button Grid.Column="7"></Button>
-                    <Button Grid.Column="8"></Button>
-                    <Button Grid.Column="9"></Button>
-                    <Button Grid.Column="10"></Button>
-                    <Button Grid.Column="11"></Button>
-                    <Button Grid.Column="12"></Button>
-                    <Button Grid.Column="13"></Button>
-                    <Button Grid.Column="14"></Button>
-                    <Button Grid.Column="15"></Button>
-                    <Button Grid.Column="16"></Button>
-                    <Button Grid.Column="17"></Button>
-                    <Button Grid.Column="18"></Button>
-                    <Button Grid.Column="19"></Button>
-                    <Button Grid.Column="20"></Button>
-                    <Button Grid.Column="21"></Button>
-                    <Button Grid.Column="22"></Button>
-                    <Button Grid.Column="23"></Button>
-                    <Button Grid.Column="24"></Button>
-                    <Button Grid.Column="25"></Button>
-                    <Button Grid.Column="26"></Button>
-                    <Button Grid.Column="27"></Button>
-                    <Button Grid.Column="28"></Button>
+                    <Button Grid.Column="1">
+                        <StackPanel>
+                            <TextBlock>Towary</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="2">
+                        <StackPanel>
+                            <TextBlock>Magazyny</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="3">
+                        <StackPanel>
+                            <TextBlock>Banki</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="4">
+                        <StackPanel>
+                            <TextBlock>Samochody</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="5">
+                        <StackPanel>
+                            <TextBlock>Trasy</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="6">
+                        <StackPanel>
+                            <TextBlock>Kalendarze</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="7">
+                        <StackPanel>
+                            <TextBlock>Projekty</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Canvas Grid.ColumnSpan="10" Grid.Row="1"></Canvas>
                 </Grid>
             </TabItem>
             <TabItem Header="Zestawienia">
-                <!--//Zakładka Zestawienia z Comarch XL 2022-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="65*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Column="0">
+                        <StackPanel>
+                            <TextBlock>Inwentaryzacja</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="1">
+                        <StackPanel>
+                            <TextBlock>Promocje i rabaty</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Canvas Grid.ColumnSpan="10" Grid.Row="1"></Canvas>
+                </Grid>
             </TabItem>
             <TabItem Header="Księgowość">
-                <!--//Zakładka Księgowość z Comarch XL 2022-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="15*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="65*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Column="0">
+                        <StackPanel>
+                            <TextBlock>Płatności</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="1">
+                        <StackPanel>
+                            <TextBlock>Rejestry kasowe/bankowe</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Canvas Grid.ColumnSpan="10" Grid.Row="1"></Canvas>
+                </Grid>
             </TabItem>
             <TabItem Header="Dokumenty">
-                <!--//Zakładka Dokumenty z Comarch XL 2022-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="15*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="65*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Column="0">
+                        <StackPanel>
+                            <TextBlock>Dokumenty handlowe</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="1">
+                        <StackPanel>
+                            <TextBlock>Zamówienia</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="2">
+                        <StackPanel>
+                            <TextBlock>Plany zapotrzebowania</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="3">
+                        <StackPanel>
+                            <TextBlock>Zlecenia kompletacji</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="4">
+                        <StackPanel>
+                            <TextBlock>Wydatki pracowników</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Canvas Grid.ColumnSpan="10" Grid.Row="1"></Canvas>
+                </Grid>
             </TabItem>
             <TabItem Header="Kontrola jakości">
-                <!--//Zakładka Kontrola jakości z Comarch XL 2022-->
-            </TabItem>
-            <TabItem Header="Traceability">
-                <!--//Zakładka Traceability z Comarch XL 2022-->
-            </TabItem>
-            <TabItem Header="Fiskalne">
-                <!--//Zakładka Fiskalne z Comarch XL 2022-->
-            </TabItem>
-            <TabItem Header="Zadanie">
-                <!--//Zakładka Zadanie z Comarch XL 2022-->
-            </TabItem>
-            <TabItem Header="Sztuczna inteligencja">
-                <!--//Zakładka Sztuczna inteligencja z Comarch XL 2022-->
-            </TabItem>
-            <TabItem Header="Okno">
-                <!--Zakładka Okno z Comarch XL -->
-            </TabItem>
-            <TabItem Header="Pomoc">
-                <!--//Zakładka Pomoc z Comarch XL -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="65*"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Column="0">
+                        <StackPanel>
+                            <TextBlock>Wzorce KJ</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="1">
+                        <StackPanel>
+                            <TextBlock>Protokoły KJ</TextBlock>
+                            <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                        </StackPanel>
+                    </Button>
+                    <Canvas Grid.ColumnSpan="10" Grid.Row="1"></Canvas>
+                </Grid>
             </TabItem>
         </TabControl>
+        <StatusBar Grid.Row="3" HorizontalAlignment="Right">
+            <StatusBarItem>
+                <Border Margin="0">
+                    <TextBlock>WSB-NLU Damian Lamonski</TextBlock>
+                </Border>
+            </StatusBarItem>
+            <StatusBarItem>
+                <Border Margin="0">
+                    <TextBlock x:FieldModifier="private" x:Name="myDateTime"/>
+                </Border>
+            </StatusBarItem>
+        </StatusBar>
     </Grid>
 </Window>

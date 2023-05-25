@@ -10,12 +10,24 @@
     <Compile Update="Windows\MainWindows\MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Windows\SubWindows\Dane_Firmy.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Windows\SubWindows\Dane_Kontrahenta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Windows\MainWindows\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\Styles\ViewResources.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\SubWindows\Dane_Firmy.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Windows\SubWindows\Dane_Kontrahenta.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PROJEKT.Windows.SubWindows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace PROJEKT.Windows.MainWindows
 {
@@ -23,5 +25,14 @@ namespace PROJEKT.Windows.MainWindows
         {
             InitializeComponent();
         }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            DispatcherTimer timer = new DispatcherTimer(TimeSpan.FromSeconds(1), DispatcherPriority.Normal, (object s, EventArgs ev) =>
+            {
+                this.myDateTime.Text = DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss");
+            }, this.Dispatcher);
+            timer.Start();
+        }
     }
+
 }

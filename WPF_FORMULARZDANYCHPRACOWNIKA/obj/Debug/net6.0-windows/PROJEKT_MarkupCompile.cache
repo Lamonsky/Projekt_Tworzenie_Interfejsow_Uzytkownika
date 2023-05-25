@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\App.xaml
-2-1295922818
+4-1962787599
 
-3780161625
+52011884956
 194-1617825143
-Resources\Styles\ViewResources.xaml;Windows\MainWindows\MainWindow.xaml;
+Resources\Styles\ViewResources.xaml;Windows\MainWindows\MainWindow.xaml;Windows\SubWindows\Dane_Firmy.xaml;Windows\SubWindows\Dane_Kontrahenta.xaml;
 
 False
 

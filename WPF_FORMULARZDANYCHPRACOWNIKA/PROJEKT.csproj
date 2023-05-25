@@ -8,18 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Windows\SubWindows\Dane_Firmy.xaml.cs" />
+    <Compile Remove="Windows\MainWindows\MainWindow - Copy.xaml.cs" />
+    <Compile Remove="Windows\SubWindows\Dane_Firmy_kopia.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Page Remove="Windows\SubWindows\Dane_Firmy.xaml" />
+    <Page Remove="Windows\MainWindows\MainWindow - Copy.xaml" />
+    <Page Remove="Windows\SubWindows\Dane_Firmy_kopia.xaml" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Resources\Fonts\" />
     <Folder Include="Resources\Icons\" />
     <Folder Include="Resources\Images\" />
-    <Folder Include="Windows\SubWindows\" />
   </ItemGroup>
 
 </Project>
