@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\damia\Documents\Studia\Tworzenie interfejsów użytkownika\Laboratoria\WPF_FORMULARZDANYCHPRACOWNIKA\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\
 PROJEKT
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\damia\Documents\Studia\Tworzenie interfejsów użytkownika\Laboratoria\WPF_FORMULARZDANYCHPRACOWNIKA\WPF_FORMULARZDANYCHPRACOWNIKA\App.xaml
-2-58133138
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\App.xaml
+2-1295922818
 
-3-1233169557
+3780161625
 194-1617825143
-MainWindow.xaml;Resources\Styles\ViewResources.xaml;
+Resources\Styles\ViewResources.xaml;Windows\MainWindows\MainWindow.xaml;
 
 False
 

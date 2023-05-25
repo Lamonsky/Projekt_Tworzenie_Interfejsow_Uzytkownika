@@ -8,9 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Windows\SubWindows\Dane_Firmy.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Windows\SubWindows\Dane_Firmy.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Resources\Fonts\" />
     <Folder Include="Resources\Icons\" />
     <Folder Include="Resources\Images\" />
+    <Folder Include="Windows\SubWindows\" />
   </ItemGroup>
 
 </Project>

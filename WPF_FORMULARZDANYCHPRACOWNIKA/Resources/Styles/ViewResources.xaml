@@ -11,6 +11,7 @@
     <SolidColorBrush x:Key="SecondaryBrush">#5032a8</SolidColorBrush>
     <SolidColorBrush x:Key="AccentBrush">#a88732</SolidColorBrush>
 
+    
     <Style TargetType="{x:Type Label}">
         <Setter Property="Margin" Value="{StaticResource SmallThickness}" />
         <Setter Property="Padding" Value="0" />
@@ -22,6 +23,7 @@
 
     <Style TargetType="{x:Type Button}">
         <Setter Property="Margin" Value="{StaticResource SmallThickness}" />
+        <Setter Property="Background" Value="White"/>
     </Style>
 
     <Style TargetType="{x:Type ComboBox}">
@@ -30,8 +32,15 @@
 
     <Style TargetType="{x:Type TextBox}">
         <Setter Property="Margin" Value="{StaticResource SmallThickness}" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="8"/>
     </Style>
-    
+
+    <Style TargetType="{x:Type TextBlock}">
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="10"/>
+    </Style>
+
     <Style TargetType="{x:Type CheckBox}">
         <Setter Property="Margin" Value="{StaticResource SmallThickness}" />
     </Style>
