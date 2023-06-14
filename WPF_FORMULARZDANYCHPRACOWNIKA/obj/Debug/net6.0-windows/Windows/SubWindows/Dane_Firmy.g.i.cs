@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using PROJEKT.Windows.MainWindows;
 using PROJEKT.Windows.SubWindows;
 using System;
 using System.Diagnostics;
@@ -53,7 +54,7 @@ namespace PROJEKT.Windows.SubWindows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PROJEKT;component/windows/subwindows/dane_firmy.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PROJEKT;V1.0.0.0;component/windows/subwindows/dane_firmy.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Windows\SubWindows\Dane_Firmy.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

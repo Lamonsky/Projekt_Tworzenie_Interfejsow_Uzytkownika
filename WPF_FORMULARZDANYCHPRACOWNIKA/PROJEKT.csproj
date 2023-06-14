@@ -18,9 +18,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Fonts\" />
-    <Folder Include="Resources\Icons\" />
-    <Folder Include="Resources\Images\" />
+    <Folder Include="SampleData\" />
+    <Folder Include="Resources\" />
+    <Folder Include="ViewResources\Fonts\" />
+    <Folder Include="ViewResources\Images\" />
+    <Folder Include="Windows\MainWindows\" />
+    <Folder Include="Windows\SubWindows\" />
   </ItemGroup>
 
 </Project>

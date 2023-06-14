@@ -1,0 +1,119 @@
+﻿<UserControl x:Class="PROJEKT.Views.KontrahenciView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PROJEKT.Views"
+             mc:Ignorable="d"
+             d:DesignHeight="900" d:DesignWidth="1920">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TabControl Grid.Row="0">
+            <TabItem Header="Znajdź">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="6*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="6*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Akronim:"/>
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Nazwa:"/>
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Osoba:"/>
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="NIP:"/>
+                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Rodzaj zgody:"/>
+                        <Grid Grid.Row="0" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="25"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Grid.Column="0"/>
+                            <ToggleButton Grid.Column="1">
+                                <Image Source="../ViewResources/Icons/Speaker.png"/>
+                            </ToggleButton>
+                        </Grid>
+                        <TextBox Grid.Row="1" Grid.Column="1"/>
+                        <TextBox Grid.Row="2" Grid.Column="1"/>
+                        <TextBox Grid.Row="3" Grid.Column="1"/>
+                        <ComboBox Grid.Row="4" Grid.Column="1">
+                            <ComboBoxItem Content="Zgoda na automatyczne przetwarzanie danych"/>
+                            <ComboBoxItem Content="Zgoda na profilowanie"/>
+                            <ComboBoxItem Content="Zgoda na przetwarzanie danych"/>
+                        </ComboBox>
+                        <TextBlock Grid.Row="0" Grid.Column="3" Text="Miasto:"/>
+                        <TextBlock Grid.Row="1" Grid.Column="3" Text="Kraj:"/>
+                        <TextBlock Grid.Row="2" Grid.Column="3" Text="Telefon:"/>
+                        <TextBlock Grid.Row="3" Grid.Column="3" Text="E-mail:"/>
+                        <CheckBox Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Content="Tylko aktywna zgoda"/>
+                        <TextBox Grid.Row="0" Grid.Column="4"/>
+                        <Grid Grid.Row="1" Grid.Column="4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="3*"/>
+                            </Grid.ColumnDefinitions>
+                            <ComboBox Grid.Column="0">
+                                <ComboBoxItem Content="Polska"/>
+                                <ComboBoxItem Content="USA"/>
+                                <ComboBoxItem Content="Niemcy"/>
+                            </ComboBox>
+                            <TextBlock Grid.Column="1" Text="Kod:"/>
+                            <TextBox Grid.Column="2"/>
+                        </Grid>
+                        <TextBox Grid.Row="2" Grid.Column="4"/>
+                        <TextBox Grid.Row="3" Grid.Column="4"/>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="0"  Content="Akronim:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="1"  Content="Nazwa:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="2"  Content="Miasto:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="3"  Content="Ulica:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="4"  Content="Prefiks:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="5"  Content="NIP:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="6"  Content="E-mail:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="7"  Content="Telefon:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="8"  Content="Telefon 2:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="9"  Content="GSM:"/>
+                        <DataGridColumnHeader Grid.Row="0" Grid.Column="10"  Content="Fax:"/>
+                    </Grid>
+                    <Button Grid.Row="2" Content="Szukaj" MaxWidth="250" MaxHeight="50"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

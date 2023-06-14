@@ -1,0 +1,206 @@
+﻿<Page x:Class="PROJEKT.Views.Dane_Kontrahenta"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PROJEKT.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="800"
+      Title="Dane_Kontrahenta">
+
+    <Page.Resources>
+        <ResourceDictionary Source="..\ViewResources\Styles\ViewResources.xaml"/>
+    </Page.Resources>
+    <TabControl>
+        <TabItem Header="1. Ogólne">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Zapis aktualny od" Grid.Row="0" Grid.Column="0"/>
+                        <DatePicker Grid.Row="0" Grid.Column="1"/>
+                        <Button Content="Centrum Podległ." Grid.Row="0" Grid.Column="3" ToolTip="Naciśnij mnie!"/>
+                        <ComboBox Grid.Row="0" Grid.Column="4">
+                            <ComboBoxItem Content="Firma" IsSelected="true"/>
+                            <ComboBoxItem Content="Osoba fizyczna"/>
+                        </ComboBox>
+                        <CheckBox Content="Archiwalny" Grid.Row="0" Grid.Column="5"/>
+                    </Grid>
+                </Border>
+                <Expander Grid.Row="1" IsExpanded="True" Header="Wydział/Wieloetatowość">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Button Grid.Row="0" Grid.Column="0" Content="Wydział"/>
+                        <ComboBox Grid.Row="0" Grid.Column="1">
+                            <ComboBoxItem Content="Firma" IsSelected="False"/>
+                        </ComboBox>
+                        <CheckBox Content="Etat podstawowy dla pracownika zatrud. na wielu etatach" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                        <Button Content="Etat dodatkowy dla" Grid.Row="1" Grid.Column="2"/>
+                        <ComboBox Grid.Row="1" Grid.Column="3"/>
+                    </Grid>
+                </Expander>
+                <Expander Grid.Row="2" IsExpanded="True" Header="Dane Personalne">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Content="Akronim:" Grid.Row="0" Grid.Column="0" Style="{StaticResource BoldedLabel}"/>
+                        <TextBox Grid.Row="0" Grid.Column="1"/>
+                        <Label Content="Nazwisko:" Grid.Row="0" Grid.Column="2" Style="{StaticResource BoldedLabel}"/>
+                        <TextBox Grid.Row="0" Grid.Column="3"/>
+                        <Label Content="Imię:" Grid.Row="1" Grid.Column="0" Style="{StaticResource BoldedLabel}"/>
+                        <TextBox Grid.Row="1" Grid.Column="1"/>
+                        <Label Content="Drugie imię:" Grid.Row="1" Grid.Column="2"/>
+                        <TextBox Grid.Row="1" Grid.Column="3"/>
+                        <Label Content="Pesel:" Grid.Row="2" Grid.Column="0"/>
+                        <TextBox Grid.Row="2" Grid.Column="1"/>
+                        <Label Content="NIP:" Grid.Row="2" Grid.Column="2"/>
+                        <Grid Grid.Row="2" Grid.Column="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" MinWidth="40"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <ComboBox Grid.Column="0"/>
+                            <TextBox Grid.Column="1"/>
+                        </Grid>
+                        <Label Content="Data urodzenia:" Grid.Row="3" Grid.Column="0"/>
+                        <DatePicker Grid.Row="3" Grid.Column="1"  HorizontalAlignment="Left"/>
+                        <Button Content="Miejsce urodzenia: " Grid.Row="3" Grid.Column="2"/>
+                        <ComboBox Grid.Row="3" Grid.Column="3"/>
+                        <Label Content="Imię ojca:" Grid.Row="4" Grid.Column="0"/>
+                        <TextBox Grid.Row="4" Grid.Column="1"/>
+                        <Label Content="Imię matki:" Grid.Row="4" Grid.Column="2"/>
+                        <TextBox Grid.Row="4" Grid.Column="3"/>
+                        <Label Content="Nazwisko rodowe:" Grid.Row="5" Grid.Column="0"/>
+                        <TextBox Grid.Row="5" Grid.Column="1"/>
+                        <Label Content="Nazwisko rodowe matki:" Grid.Row="5" Grid.Column="2"/>
+                        <TextBox Grid.Row="5" Grid.Column="3"/>
+                    </Grid>
+                </Expander>
+                <Expander Grid.Row="3" IsExpanded="True" Header="Adres zameldowania">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="3*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Content="Kraj\Kod kraju" Grid.Row="0" Grid.Column="0"/>
+                        <Grid Grid.Row="0" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition  Width="auto" MinWidth="40"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Grid.Column="0"/>
+                            <ComboBox Grid.Column="1"/>
+                        </Grid>
+                        <Label Content="Województwo:" Grid.Row="0" Grid.Column="2"/>
+                        <ComboBox Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="3"/>
+                        <Label Content="Powiat:" Grid.Row="1" Grid.Column="0"/>
+                        <TextBox Grid.Row="1" Grid.Column="1"/>
+                        <Label Content="Kod gminy" Grid.Row="1" Grid.Column="2"/>
+                        <Border Grid.Row="1" Grid.Column="3" Margin="0" Padding="0" BorderThickness="0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Grid.Column="0"/>
+                                <CheckBox Grid.Column="1" Grid.ColumnSpan="2">
+                                    <Label Content="Miasto"/>
+                                </CheckBox>
+                                <CheckBox Grid.Column="2">
+                                    <Label Content="Wieś"/>
+                                </CheckBox>
+                            </Grid>
+                        </Border>
+                        <Label Content="Ulica: " Grid.Row="2" Grid.Column="0"/>
+                        <TextBox Grid.Row="2" Grid.Column="1"/>
+                        <Label Content="Nr domu: " Grid.Row="2" Grid.Column="2"/>
+                        <Grid Grid.Row="2" Grid.Column="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Grid.Column="0"/>
+                            <Label Content="Nr lokalu: " Grid.Column="1"/>
+                            <TextBox Grid.Column="2"/>
+                        </Grid>
+                        <Button Content="Miejscowość" Grid.Row="3" Grid.Column="0"/>
+                        <ComboBox Grid.Row="3" Grid.Column="1"/>
+                        <Label Content="Kod pocztowy:" Grid.Row="3" Grid.Column="2"/>
+                        <TextBox Grid.Row="3" Grid.Column="3" HorizontalAlignment="Left" MinWidth="60"/>
+                        <Button Content="Gmina" Grid.Row="4" Grid.Column="0"/>
+                        <ComboBox Grid.Row="4" Grid.Column="1"/>
+                        <Button Content="Poczta" Grid.Row="4" Grid.Column="2"/>
+                        <ComboBox Grid.Row="4" Grid.Column="3"/>
+                        <Label Content="Telefon:" Grid.Row="5" Grid.Column="0"/>
+                        <TextBox Grid.Row="5" Grid.Column="1"/>
+                        <Label Content="Telefon SMS:" Grid.Row="5" Grid.Column="2"/>
+                        <TextBox Grid.Row="5" Grid.Column="3"/>
+                        <Label Content="E-Mail: " Grid.Row="6" Grid.Column="0"/>
+                        <Grid Grid.Row="6" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Grid.Column="0"/>
+                            <Button Grid.Column="1"/>
+                        </Grid>
+                    </Grid>
+                </Expander>
+            </Grid>
+        </TabItem>
+        <TabItem Header="2. Nr ident./podatki"></TabItem>
+        <TabItem Header="3. Etat"></TabItem>
+
+
+    </TabControl>
+</Page>

@@ -1,15 +1,4 @@
-﻿<Window x:Class="PROJEKT.Windows.MainWindows.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PROJEKT.Windows.MainWindows"
-        mc:Ignorable="d"
-        Title="Sprzedaż" Height="900" Width="1600" Loaded="Window_Loaded">
-    <Window.Resources>
-        <ResourceDictionary Source="..\..\Resources\Styles\ViewResources.xaml"/>
-    </Window.Resources>
-    <Grid>
+﻿ <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="6*"/>
@@ -44,7 +33,7 @@
                     <Button Grid.Column="0" Margin="2,2,2,2">
                         <StackPanel>
                             <TextBlock>Kontrahenci</TextBlock>
-                            <Image Source="..\..\Resources\Icons\kontrahenci.png" MouseLeftButtonDown="Open_Dane_Kontrahenta"/>
+                            <Image Source="..\..\Resources\Icons\kontrahenci.png"/>
                         </StackPanel>
                         
                     </Button>
@@ -98,7 +87,7 @@
                             <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                         </StackPanel>
                     </Button>
-                    <Frame Grid.Row="3" Grid.ColumnSpan="10" x:Name="PlaceforFrames" VerticalAlignment="Stretch" VerticalContentAlignment="Center" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Center" Background="DarkGray" />
+                    <Canvas Grid.ColumnSpan="10" Grid.Row="3"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Listy">
@@ -312,4 +301,3 @@
             </StatusBarItem>
         </StatusBar>
     </Grid>
-</Window>

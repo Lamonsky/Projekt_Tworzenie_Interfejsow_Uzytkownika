@@ -7,27 +7,39 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Windows\MainWindows\MainWindow.xaml.cs">
+    <Compile Update="Views\KontrahenciView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\SubWindows\Dane_Firmy.xaml.cs">
+    <Compile Update="Views\MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Windows\SubWindows\Dane_Kontrahenta.xaml.cs">
+    <Compile Update="Views\Dane_Firmy.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Dane_Kontrahenta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TowaryView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Windows\MainWindows\MainWindow.xaml">
+    <Page Update="Views\KontrahenciView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Resources\Styles\ViewResources.xaml">
+    <Page Update="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\SubWindows\Dane_Firmy.xaml">
+    <Page Update="ViewResources\Styles\ViewResources.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Windows\SubWindows\Dane_Kontrahenta.xaml">
+    <Page Update="Views\Dane_Firmy.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Dane_Kontrahenta.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TowaryView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
