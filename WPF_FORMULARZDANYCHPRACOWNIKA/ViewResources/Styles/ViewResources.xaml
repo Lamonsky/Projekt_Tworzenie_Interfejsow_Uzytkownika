@@ -1,7 +1,11 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    
+
     <Thickness x:Key="SmallThickness">2</Thickness>
     <Thickness x:Key="MediumThickness">4</Thickness>
+    
     
     <Color x:Key="PrimaryColor">#3285a8</Color>
     <Color x:Key="SecondaryColor">#5032a8</Color>
@@ -21,9 +25,8 @@
         <Setter Property="Margin" Value="{StaticResource SmallThickness}" />
     </Style>
 
-    <Style TargetType="{x:Type Button}">
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignButton}">
         <Setter Property="Margin" Value="{StaticResource SmallThickness}" />
-        <Setter Property="Background" Value="White"/>
     </Style>
 
     <Style TargetType="{x:Type ComboBox}">
@@ -41,11 +44,9 @@
         <Setter Property="Margin" Value="{StaticResource SmallThickness}" />
     </Style>
 
-    <Style TargetType="{x:Type StatusBar}">
-        <Setter Property="Background" Value="White"/>
-    </Style>
-    
-    <Style TargetType="{x:Type TextBlock}">
+
+    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource MaterialDesignTextBlock}">
+        <Setter Property="Margin" Value="{StaticResource MediumThickness}"/>
         <Setter Property="TextAlignment" Value="Center" />
         <Setter Property="FontSize" Value="10"/>
         <Setter Property="TextWrapping" Value="Wrap"/>

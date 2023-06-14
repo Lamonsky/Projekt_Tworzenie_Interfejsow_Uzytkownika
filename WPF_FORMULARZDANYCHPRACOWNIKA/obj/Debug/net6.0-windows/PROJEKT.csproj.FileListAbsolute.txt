@@ -50,3 +50,8 @@ C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FO
 C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\Views\KontrahenciView.baml
 C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\Views\TowaryView.g.cs
 C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\Views\TowaryView.baml
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\PROJEKT.csproj.CopyComplete
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\App.baml
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\bin\Debug\net6.0-windows\MaterialDesignColors.dll
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\bin\Debug\net6.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "tUE1a26TBOkRahajVrVfFY7rNPTXQxuhLR2IT0fRx/yo614U2SEkxyKvOuGCQ6WnEHhhk8O99FOBGYgw3eS22g==",
+  "dgSpecHash": "7sLj5ax1jNQq3eik0Hm2pV8iBy63unkNg4KSNPMY1pceUwzf48rBHtPbk2XNcjYnoFDpnfXmxms6ZbTLWATtjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\damia\\Documents\\GitHub\\Projekt_Tworzenie_Interfejsow_Uzytkownika\\WPF_FORMULARZDANYCHPRACOWNIKA\\PROJEKT.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\damia\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\damia\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\damia\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -36,10 +36,12 @@ namespace PROJEKT.Views
 
         private void KontrahenciView(object sender, RoutedEventArgs e)
         {
+            ClearWorkspace(sender, e);
             Workspace.Content = new KontrahenciView();
         }
         private void TowaryView(object sender, RoutedEventArgs e)
         {
+            ClearWorkspace(sender, e);
             Workspace.Content = new TowaryView();
         }
         private void ClearWorkspace(object sender, RoutedEventArgs e)

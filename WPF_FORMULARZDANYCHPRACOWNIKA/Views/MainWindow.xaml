@@ -4,15 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROJEKT.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
         Title="Sprzedaż" Height="1080" Width="1920" Loaded="Window_Loaded">
 
 
+    
     <Grid x:Name="grid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="15*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
@@ -33,29 +42,29 @@
                 <TabItem Header="Ogólne">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
-                        <ToggleButton Grid.Column="0" Margin="2,2,2,1" Checked="KontrahenciView" Unchecked="ClearWorkspace">
+                        <Button Grid.Column="0" Margin="2,2,2,1" Click="KontrahenciView">
                             <StackPanel>
                                 <TextBlock>Kontrahenci</TextBlock>
                             </StackPanel>
 
-                        </ToggleButton>
-                        <ToggleButton Grid.Column="1" Margin="2,2,2,1" Checked="TowaryView" Unchecked="ClearWorkspace">
+                        </Button>
+                        <Button Grid.Column="1" Margin="2,2,2,1" Click="TowaryView">
                             <StackPanel>
                                 <TextBlock>Towary</TextBlock>
                                 <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
-                        </ToggleButton>
+                        </Button>
                         <Button Grid.Column="2" Margin="2,2,2,1">
                             <StackPanel>
                                 <TextBlock>Płatności</TextBlock>
@@ -295,4 +304,8 @@
     </Grid>
 
 
+
+
+
 </Window>
+    

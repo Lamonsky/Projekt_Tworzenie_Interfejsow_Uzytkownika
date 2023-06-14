@@ -53,7 +53,7 @@ namespace PROJEKT.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PROJEKT;component/views/dane_firmy.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PROJEKT;V1.0.0.0;component/views/dane_firmy.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\Dane_Firmy.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
