@@ -1,0 +1,145 @@
+﻿<UserControl x:Class="PROJEKT.Views.KsiegaInwentarzowaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PROJEKT.Views"
+             xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="1920">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TabControl Grid.Row="0">
+            <TabItem Header="Znajdź" Style="{DynamicResource MaterialDesignHeaderedContentControl}">
+                <Border Grid.Row="1" Margin="2" BorderThickness="1" BorderBrush="Black">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Margin="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Akronim:"/>
+                            <Grid Grid.Row="0" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="100"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Grid.Column="0" Style="{DynamicResource MaterialDesignTextBoxBase}"/>
+                                <TextBlock Grid.Column="1" Text="Nr inw.:"/>
+                                <syncfusion:UpDown Grid.Row="4" Grid.Column="3"/>
+                            </Grid>
+                            <TextBlock Grid.Row="0" Grid.Column="2" Text="Nr ewid:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="0" Grid.Column="3" Style="{DynamicResource MaterialDesignTextBoxBase}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Nazwa:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="1" Grid.Column="1" Style="{DynamicResource MaterialDesignTextBoxBase}"/>
+                            <TextBlock Grid.Row="1" Grid.Column="2" Text="Opis:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBox Grid.Row="1" Grid.Column="3" Style="{DynamicResource MaterialDesignTextBoxBase}"/>
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="Księga:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Grid Grid.Row="2" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="75"/>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="75"/>
+                                </Grid.ColumnDefinitions>
+                                <ComboBox Grid.Column="0">
+                                    <ComboBoxItem Content="ŚT - Środki Trwałe"/>
+                                    <ComboBoxItem Content="WYPOS - Wyposażenie"/>
+                                </ComboBox>
+                                <CheckBox Grid.Column="1"/>
+                                <TextBlock Grid.Column="2" Text="Archiwalna"/>
+                            </Grid>
+                            <Button Grid.Row="2" Grid.Column="2" Content="KŚT:" Style="{DynamicResource MaterialDesignPaperLightButton}" Click="KSTWindow"/>
+                            <TextBox Grid.Row="2" Grid.Column="3"/>
+                            <TextBlock Grid.Row="3" Grid.Column="0" Text="Miejsce:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <ComboBox Grid.Row="3" Grid.Column="1" Width="75" HorizontalAlignment="Left">
+                                <ComboBoxItem Content="Centrala"/>
+                                <ComboBoxItem Content="Magazyn 1"/>
+                                <ComboBoxItem Content="Magazyn 2"/>
+                            </ComboBox>
+                            <TextBlock Grid.Row="3" Grid.Column="2" Text="Na dzień:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <syncfusion:UpDown Grid.Row="3" Grid.Column="3"/>
+                            <Button Content="Osoba" Grid.Row="4" Grid.Column="0" Style="{DynamicResource MaterialDesignPaperLightButton}"/>
+                            <TextBox Grid.Row="4" Grid.Column="1"/>
+                            <TextBlock Grid.Row="4" Grid.Column="2" Text="Na dzień:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <syncfusion:UpDown Grid.Row="4" Grid.Column="3"/>
+                            <Grid Grid.Row="5" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="75"/>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="75"/>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="75"/>
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Grid.Column="0"/>
+                                <TextBlock Grid.Column="1" Text="Środki trw"/>
+                                <CheckBox Grid.Column="2"/>
+                                <TextBlock Grid.Column="3" Text="Niemat."/>
+                                <CheckBox Grid.Column="4"/>
+                                <TextBlock Grid.Column="5" Text="Wypos."/>
+                            </Grid>
+                            <Button Grid.Row="5" Grid.Column="2" Content="Data dok.:" Style="{DynamicResource MaterialDesignPaperLightButton}"/>
+                            <DatePicker Grid.Row="5" Grid.Column="3" Style="{DynamicResource MaterialDesignDatePicker}"/>
+                            <TextBlock Grid.Row="6" Grid.Column="0" Text="Status:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <ComboBox Grid.Row="6" Grid.Column="1" Width="150" HorizontalAlignment="Left">
+                                <ComboBoxItem Content="Wszytkie"/>
+                                <ComboBoxItem Content="Aktywne niezamortyzowane"/>
+                            </ComboBox>
+                            <TextBlock Grid.Row="6" Grid.Column="2" Text="Stan:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <ComboBox Grid.Row="6" Grid.Column="3">
+                                <ComboBoxItem Content="Wszystkie"/>
+                                <ComboBoxItem Content="Niezlikwidowane"/>
+                                <ComboBoxItem Content="Zlikwidowane"/>
+                            </ComboBox>
+                        </Grid>
+
+                        <Border Margin="2" BorderThickness="1" BorderBrush="Black" Grid.Row="1">
+                            <Grid>
+                                <DataGrid AutoGenerateColumns="True" GridLinesVisibility="All">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Akronim" MinWidth="100"/>
+                                        <DataGridTextColumn Header="Nazwa" MinWidth="150"/>
+                                        <DataGridTextColumn Header="Księga Inw." MinWidth="300"/>
+                                        <DataGridTextColumn Header="Nr inw." MinWidth="300"/>
+                                        <DataGridTextColumn Header="Nr ewid." MinWidth="100"/>
+                                        <DataGridTextColumn Header="Etykieta (KOD)" MinWidth="150"/>
+                                        <DataGridTextColumn Header="KŚT" MinWidth="200"/>
+                                        <DataGridTextColumn Header="Data przyjęcia" MinWidth="100"/>
+                                        <DataGridTextColumn Header="Data likwidacji" MinWidth="100"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </Border>
+                        <Grid Grid.Row="2">
+                            <Button HorizontalAlignment="Left" Margin="20" Content="Dodaj Środek Trwały" MaxWidth="250" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}" Width="208" Click="DodajSrodekTrwalyWindow"/>
+                            <Button HorizontalAlignment="Right" Margin="20" Content="Szukaj" MaxWidth="250" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}" Width="208"/>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </TabItem>
+
+        </TabControl>
+            
+    </Grid>
+</UserControl>

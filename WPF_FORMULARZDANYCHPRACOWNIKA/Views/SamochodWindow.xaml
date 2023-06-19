@@ -1,0 +1,56 @@
+﻿<Window x:Class="PROJEKT.Views.SamochodWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROJEKT.Views"
+        mc:Ignorable="d"
+        Title="Lista samochodow" Height="900" Width="1600">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Ogólne">
+                <DataGrid AutoGenerateColumns="True" GridLinesVisibility="All">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Nr Rej."/>
+                        <DataGridTextColumn Header="Marka."/>
+                        <DataGridTextColumn Header="Model"/>
+                        <DataGridTextColumn Header="Ładowność [t]"/>
+                        <DataGridTextColumn Header="Spedytor"/>
+                        <DataGridTextColumn Header="Opis"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Przejazdy">
+                <DataGrid AutoGenerateColumns="True" GridLinesVisibility="All">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Numer."/>
+                        <DataGridTextColumn Header="Wyjazd"/>
+                        <DataGridTextColumn Header="Przyjazd"/>
+                        <DataGridTextColumn Header="Wyjazd z"/>
+                        <DataGridTextColumn Header="Przyjazd do"/>
+                        <DataGridTextColumn Header="Nr Rej."/>
+                        <DataGridTextColumn Header="Marka"/>
+                        <DataGridTextColumn Header="Kierowca"/>
+                        <DataGridTextColumn Header="Stan licznika wyjazd"/>
+                        <DataGridTextColumn Header="Stan licznika przyjazd"/>
+                        <DataGridTextColumn Header="Odległość"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Wydatki">
+                <DataGrid AutoGenerateColumns="True" GridLinesVisibility="All">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Lp"/>
+                        <DataGridTextColumn Header="Data wpływu"/>
+                        <DataGridTextColumn Header="Dokument"/>
+                        <DataGridTextColumn Header="Źródłowy"/>
+                        <DataGridTextColumn Header="Rejestr"/>
+                        <DataGridTextColumn Header="Nr Rej"/>
+                        <DataGridTextColumn Header="Marka"/>
+                        <DataGridTextColumn Header="Opis"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

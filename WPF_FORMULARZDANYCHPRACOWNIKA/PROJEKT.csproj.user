@@ -7,16 +7,34 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\DaneKontrahentaWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DodajSrodekTrwalyWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DokumentyView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\KontrahenciView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\KsiegaInwentarzowaView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\KSTWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MagazynyView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Dane_Firmy.xaml.cs">
+    <Compile Update="Views\SamochodWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Dane_Kontrahenta.xaml.cs">
+    <Compile Update="Views\TabelaAmortyzacjiView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\TowaryView.xaml.cs">
@@ -24,7 +42,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\DaneKontrahentaWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DodajSrodekTrwalyWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DokumentyView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\KontrahenciView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\KsiegaInwentarzowaView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\KSTWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MagazynyView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainWindow.xaml">
@@ -33,10 +69,10 @@
     <Page Update="ViewResources\Styles\ViewResources.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Dane_Firmy.xaml">
+    <Page Update="Views\SamochodWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Dane_Kontrahenta.xaml">
+    <Page Update="Views\TabelaAmortyzacjiView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\TowaryView.xaml">

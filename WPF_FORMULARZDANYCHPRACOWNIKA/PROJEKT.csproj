@@ -13,6 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ViewResources\Icons\kontrahenci.png" />
+    <None Remove="ViewResources\Icons\Speaker.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Remove="Windows\MainWindows\MainWindow - Copy.xaml" />
     <Page Remove="Windows\SubWindows\Dane_Firmy_kopia.xaml" />
   </ItemGroup>
@@ -28,6 +33,12 @@
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="21.2.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ViewResources\Icons\kontrahenci.png" />
+    <Resource Include="ViewResources\Icons\Speaker.png" />
   </ItemGroup>
 
 </Project>

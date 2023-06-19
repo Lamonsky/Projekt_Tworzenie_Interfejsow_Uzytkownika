@@ -13,107 +13,104 @@
         </Grid.RowDefinitions>
 
         <TabControl Grid.Row="0">
-            <TabItem Header="Znajdź">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="150"/>
-                        <RowDefinition Height="6*"/>
-                        <RowDefinition Height="1*"/>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Row="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width="6*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                        </Grid.ColumnDefinitions>
+            <TabItem Header="Znajdź" Style="{DynamicResource MaterialDesignHeaderedContentControl}">
+                <Border Grid.Row="1" Margin="2" BorderThickness="1" BorderBrush="Black">
+                    <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="6*"/>
+                            <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Akronim:"/>
-                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Nazwa:"/>
-                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Osoba:"/>
-                        <TextBlock Grid.Row="3" Grid.Column="0" Text="NIP:"/>
-                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Rodzaj zgody:"/>
-                        <Grid Grid.Row="0" Grid.Column="1">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="40"/>
-                            </Grid.ColumnDefinitions>
-                            <TextBox Grid.Column="0"/>
-                            <Button Grid.Column="1">
-                                <Image Source="../ViewResources/Icons/Speaker.png"/>
-                            </Button>
-                        </Grid>
-                        <TextBox Grid.Row="1" Grid.Column="1"/>
-                        <TextBox Grid.Row="2" Grid.Column="1"/>
-                        <TextBox Grid.Row="3" Grid.Column="1"/>
-                        <ComboBox Grid.Row="4" Grid.Column="1">
-                            <ComboBoxItem Content="Zgoda na automatyczne przetwarzanie danych"/>
-                            <ComboBoxItem Content="Zgoda na profilowanie"/>
-                            <ComboBoxItem Content="Zgoda na przetwarzanie danych"/>
-                        </ComboBox>
-                        <TextBlock Grid.Row="0" Grid.Column="3" Text="Miasto:"/>
-                        <TextBlock Grid.Row="1" Grid.Column="3" Text="Kraj:"/>
-                        <TextBlock Grid.Row="2" Grid.Column="3" Text="Telefon:"/>
-                        <TextBlock Grid.Row="3" Grid.Column="3" Text="E-mail:"/>
-                        <CheckBox Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Content="Tylko aktywna zgoda"/>
-                        <TextBox Grid.Row="0" Grid.Column="4"/>
-                        <Grid Grid.Row="1" Grid.Column="4">
+                        <Grid Grid.Row="0" Margin="2">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="6*"/>
                                 <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="2*"/>
                             </Grid.ColumnDefinitions>
-                            <ComboBox Grid.Column="0">
-                                <ComboBoxItem Content="Polska"/>
-                                <ComboBoxItem Content="USA"/>
-                                <ComboBoxItem Content="Niemcy"/>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Akronim:"/>
+                            <TextBlock Grid.Row="1" Grid.Column="0" Text="Nazwa:"/>
+                            <TextBlock Grid.Row="2" Grid.Column="0" Text="Osoba:"/>
+                            <TextBlock Grid.Row="3" Grid.Column="0" Text="NIP:"/>
+                            <TextBlock Grid.Row="4" Grid.Column="0" Text="Rodzaj zgody:"/>
+                            <Grid Grid.Row="0" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="50"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Grid.Column="0" Style="{DynamicResource TextBoxStyle1}"/>
+                                <Button Grid.Column="1" Style="{DynamicResource MaterialDesignPaperLightButton}">
+                                    <Image Source="../ViewResources/Icons/Speaker.png"/>
+                                </Button>
+                            </Grid>
+                            <TextBox Grid.Row="1" Grid.Column="1" Style="{DynamicResource TextBoxStyle1}"/>
+                            <TextBox Grid.Row="2" Grid.Column="1" Style="{DynamicResource TextBoxStyle1}"/>
+                            <TextBox Grid.Row="3" Grid.Column="1" Style="{DynamicResource TextBoxStyle1}"/>
+                            <ComboBox Grid.Row="4" Grid.Column="1" Style="{DynamicResource MaterialDesignComboBox}">
+                                <ComboBoxItem Content="Zgoda na automatyczne przetwarzanie danych"/>
+                                <ComboBoxItem Content="Zgoda na profilowanie"/>
+                                <ComboBoxItem Content="Zgoda na przetwarzanie danych"/>
                             </ComboBox>
-                            <TextBlock Grid.Column="1" Text="Kod:"/>
-                            <TextBox Grid.Column="2"/>
+                            <TextBlock Grid.Row="0" Grid.Column="3" Text="Miasto:"/>
+                            <TextBlock Grid.Row="1" Grid.Column="3" Text="Kraj:"/>
+                            <TextBlock Grid.Row="2" Grid.Column="3" Text="Telefon:"/>
+                            <TextBlock Grid.Row="3" Grid.Column="3" Text="E-mail:"/>
+                            <CheckBox Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Content="Tylko aktywna zgoda"/>
+                            <TextBox Grid.Row="0" Grid.Column="4"/>
+
+                            <Grid Grid.Row="1" Grid.Column="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                </Grid.ColumnDefinitions>
+                                <ComboBox Grid.Column="0">
+                                    <ComboBoxItem Content="Polska"/>
+                                    <ComboBoxItem Content="USA"/>
+                                    <ComboBoxItem Content="Niemcy"/>
+                                </ComboBox>
+                                <TextBlock Grid.Column="1" Text="Kod:"/>
+                                <TextBox Grid.Column="2"/>
+                            </Grid>
+                            <TextBox Grid.Row="2" Grid.Column="4"/>
+                            <TextBox Grid.Row="3" Grid.Column="4"/>
                         </Grid>
-                        <TextBox Grid.Row="2" Grid.Column="4"/>
-                        <TextBox Grid.Row="3" Grid.Column="4"/>
+
+                        <Border Margin="2" BorderThickness="1" BorderBrush="Black" Grid.Row="1">
+                            <Grid>
+                                <DataGrid AutoGenerateColumns="True" GridLinesVisibility="All" >
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Akronim" MinWidth="100"/>
+                                        <DataGridTextColumn Header="Nazwa" MinWidth="150"/>
+                                        <DataGridTextColumn Header="Miasto" MinWidth="300"/>
+                                        <DataGridTextColumn Header="Ulica" MinWidth="300"/>
+                                        <DataGridTextColumn Header="Prefiks" MinWidth="100"/>
+                                        <DataGridTextColumn Header="NIP" MinWidth="150"/>
+                                        <DataGridTextColumn Header="E-mail" MinWidth="200"/>
+                                        <DataGridTextColumn Header="Telefon" MinWidth="100"/>
+                                        <DataGridTextColumn Header="Telefon2" MinWidth="100"/>
+                                        <DataGridTextColumn Header="GSM" MinWidth="100"/>
+                                        <DataGridTextColumn Header="FAX" MinWidth="150"/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </Border>
+                        <Grid Grid.Row="2">
+                            <Button HorizontalAlignment="Left" Margin="20" Content="Dodaj kontrahenta" MaxWidth="250" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}" Width="208" Click="DaneKontrahentaWindow"/>
+                            <Button HorizontalAlignment="Right" Margin="20" Content="Szukaj" MaxWidth="250" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}" Width="208"/>
+                        </Grid>
                     </Grid>
-                    <Grid Grid.Row="1">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="25"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="0"  Content="Akronim:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="1"  Content="Nazwa:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="2"  Content="Miasto:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="3"  Content="Ulica:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="4"  Content="Prefiks:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="5"  Content="NIP:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="6"  Content="E-mail:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="7"  Content="Telefon:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="8"  Content="Telefon 2:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="9"  Content="GSM:"/>
-                        <DataGridColumnHeader Grid.Row="0" Grid.Column="10"  Content="Fax:"/>
-                    </Grid>
-                    <Button Grid.Row="2" Content="Szukaj" MaxWidth="250" MaxHeight="50"/>
-                </Grid>
+                </Border>
             </TabItem>
+
         </TabControl>
     </Grid>
 </UserControl>

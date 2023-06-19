@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\App.xaml
-6784392338
+121000222001
 
-7-1297798638
-197-1647762073
-ViewResources\Styles\ViewResources.xaml;Views\Dane_Firmy.xaml;Views\Dane_Kontrahenta.xaml;Views\KontrahenciView.xaml;Views\MainWindow.xaml;Views\TowaryView.xaml;
+131119525470
+199426039494
+ViewResources\Styles\ViewResources.xaml;Views\DaneKontrahentaWindow.xaml;Views\DodajSrodekTrwalyWindow.xaml;Views\DokumentyView.xaml;Views\KontrahenciView.xaml;Views\KsiegaInwentarzowaView.xaml;Views\KSTWindow.xaml;Views\MagazynyView.xaml;Views\MainWindow.xaml;Views\SamochodWindow.xaml;Views\TabelaAmortyzacjiView.xaml;Views\TowaryView.xaml;
 
 False
 

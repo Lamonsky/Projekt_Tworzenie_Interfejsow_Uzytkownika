@@ -13,16 +13,16 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="Sprzedaż" Height="1080" Width="1920" Loaded="Window_Loaded">
+        Title="ERP Lamonski" Height="1080" Width="1920" Loaded="Window_Loaded">
 
 
-    
+
     <Grid x:Name="grid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="15*"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
 
@@ -35,244 +35,87 @@
             </Grid.ColumnDefinitions>
 
             <Menu Grid.Column="0">
-                <MenuItem Header="_System"/>
+                <MenuItem Header="_System">
+                    <MenuItem Header="_Test"/>
+                </MenuItem>
             </Menu>
 
             <TabControl Grid.Column="1" Grid.RowSpan="2">
-                <TabItem Header="Ogólne">
+                <TabItem Header="Sprzedaż">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="128"/>
+                            <ColumnDefinition Width="128"/>
+                            <ColumnDefinition Width="128"/>
+                            <ColumnDefinition Width="128"/>
+                            <ColumnDefinition Width="128"/>
+                            <ColumnDefinition Width="128"/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0" Margin="2,2,2,1" Click="KontrahenciView">
+                        <Button Grid.Column="0"  Click="KontrahenciView" Height="120">
                             <StackPanel>
-                                <TextBlock>Kontrahenci</TextBlock>
+                                <Image Source="..\ViewResources\Icons\kontrahenci.png"/>
+                                <TextBlock HorizontalAlignment="Center">Kontrahenci</TextBlock>
                             </StackPanel>
-
                         </Button>
-                        <Button Grid.Column="1" Margin="2,2,2,1" Click="TowaryView">
+                        <Button Grid.Column="1" Click="TowaryView">
                             <StackPanel>
                                 <TextBlock>Towary</TextBlock>
                                 <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
-                        <Button Grid.Column="2" Margin="2,2,2,1">
-                            <StackPanel>
-                                <TextBlock>Płatności</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="3" Margin="2,2,2,1">
-                            <StackPanel>
 
-                                <TextBlock>Zapisy kasowe/bankowe</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="4" Margin="2,2,2,1">
-                            <StackPanel>
-
-                                <TextBlock>Rejestry VAT</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="5" Margin="2,2,2,1">
-                            <StackPanel>
-                                <TextBlock>Faktura sprzedaży</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="6" Margin="2,2,2,1">
+                        <Button Grid.Column="2" Click="DokumentyView">
                             <StackPanel>
                                 <TextBlock>Dokumenty</TextBlock>
                                 <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
-                        <Button Grid.Column="7" Margin="2,2,2,1">
-                            <StackPanel>
-                                <TextBlock>Zamówienia</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="8" Margin="2,2,2,1">
-                            <StackPanel>
-                                <TextBlock>Terminarz</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Listy">
-                    <!--"//Zakładka Listy z Comarch XL 2022-->
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0">
-                            <Grid>
-                                <StackPanel>
-                                    <TextBlock>Kontrahenci</TextBlock>
-                                    <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                                </StackPanel>
-                            </Grid>
-                        </Button>
-                        <Button Grid.Column="1">
-                            <StackPanel>
-                                <TextBlock>Towary</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="2">
+                        <Button Grid.Column="3" Click="MagazynyView">
                             <StackPanel>
                                 <TextBlock>Magazyny</TextBlock>
                                 <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
-                        <Button Grid.Column="3">
-                            <StackPanel>
-                                <TextBlock>Banki</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
                         <Button Grid.Column="4">
-                            <StackPanel>
-                                <TextBlock>Samochody</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="5">
-                            <StackPanel>
-                                <TextBlock>Trasy</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="6">
-                            <StackPanel>
-                                <TextBlock>Kalendarze</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="7">
-                            <StackPanel>
-                                <TextBlock>Projekty</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Zestawienia">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0">
-                            <StackPanel>
-                                <TextBlock>Inwentaryzacja</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="1">
-                            <StackPanel>
-                                <TextBlock>Promocje i rabaty</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Księgowość">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0">
                             <StackPanel>
                                 <TextBlock>Płatności</TextBlock>
                                 <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
-                        <Button Grid.Column="1">
-                            <StackPanel>
-                                <TextBlock>Rejestry kasowe/bankowe</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                    </Grid>
-                </TabItem>
-                <TabItem Header="Dokumenty">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0">
-                            <StackPanel>
-                                <TextBlock>Dokumenty handlowe</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="1">
+                        <Button Grid.Column="5">
                             <StackPanel>
                                 <TextBlock>Zamówienia</TextBlock>
                                 <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
-                        <Button Grid.Column="2">
-                            <StackPanel>
-                                <TextBlock>Plany zapotrzebowania</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="3">
-                            <StackPanel>
-                                <TextBlock>Zlecenia kompletacji</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="4">
-                            <StackPanel>
-                                <TextBlock>Wydatki pracowników</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
                     </Grid>
                 </TabItem>
-                <TabItem Header="Kontrola jakości">
+                <TabItem Header="Środki trwałe">
+                    <!--"//Zakładka Listy z Comarch XL 2022-->
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="64"/>
-                            <ColumnDefinition Width="64"/>
+                            <ColumnDefinition Width="128"/>
+                            <ColumnDefinition Width="128"/>
+                            <ColumnDefinition Width="128"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="1423*"/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0">
+                        <Button Grid.Column="0" Click="KsiegaInwentarzowaView" Margin="0,21,0,21">
                             <StackPanel>
-                                <TextBlock>Wzorce KJ</TextBlock>
+                                <TextBlock>Księga inwentarzowa</TextBlock>
+                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                            </StackPanel>
+
+                        </Button>
+                        <Button Grid.Column="1" Click="TabelaAmortyzacjiView" Margin="0,21,0,21">
+                            <StackPanel>
+                                <TextBlock>Tabela amortyzacji</TextBlock>
                                 <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
-                        <Button Grid.Column="1">
+                        <Button Grid.Column="2" Click="MagazynyView" Margin="0,21,0,21">
                             <StackPanel>
-                                <TextBlock>Protokoły KJ</TextBlock>
+                                <TextBlock>Terminarz</TextBlock>
                                 <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>

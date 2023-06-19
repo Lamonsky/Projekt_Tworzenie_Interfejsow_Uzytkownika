@@ -47,6 +47,10 @@
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[4.9.0, )"
+            },
+            "Syncfusion.Shared.WPF": {
+              "target": "Package",
+              "version": "[21.2.10, )"
             }
           },
           "imports": [

@@ -24,5 +24,12 @@ namespace PROJEKT.Views
         {
             InitializeComponent();
         }
+
+        private void DaneKontrahentaWindow(object sender, RoutedEventArgs e)
+        {
+            DaneKontrahentaWindow daneKontrahentaWindow = new DaneKontrahentaWindow();
+            daneKontrahentaWindow.Show();
+        }
+
     }
 }

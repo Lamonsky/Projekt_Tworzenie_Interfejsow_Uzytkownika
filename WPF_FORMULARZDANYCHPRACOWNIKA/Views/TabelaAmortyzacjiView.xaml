@@ -1,0 +1,332 @@
+﻿<UserControl x:Class="PROJEKT.Views.TabelaAmortyzacjiView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PROJEKT.Views"
+             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="1920">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Grupy">
+                <Border BorderBrush="Black" BorderThickness="2" Margin="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TreeView Grid.Column="0">
+                                <TreeViewItem Header="Grupa główna">
+                                    <TreeViewItem Header="Podgrupa główna"/>
+                                </TreeViewItem>
+                                <TreeViewItem Header="Grupa poboczna">
+                                    <TreeViewItem Header="=Podgrupa poboczna"/>
+                                </TreeViewItem>
+                            </TreeView>
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <DataGrid Grid.Column="0" AutoGenerateColumns="True" GridLinesVisibility="All">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Akronim"/>
+                                        <DataGridTextColumn Header="Nr inw."/>
+                                        <DataGridTextColumn Header="Dwutor."/>
+                                        <DataGridTextColumn Header="Metoda Am."/>
+                                        <DataGridTextColumn Header="Wart. bilans. brutto"/>
+                                        <DataGridTextColumn Header="Stawka am.bilans"/>
+                                        <DataGridTextColumn Header="Am.bilans.bież."/>
+                                        <DataGridTextColumn Header="Am.bilans.narast."/>
+                                        <DataGridTextColumn Header="Podst.podatk.brutto"/>
+                                        <DataGridTextColumn Header="Stawka am.podatk."/>
+                                        <DataGridTextColumn Header="Am.podatk.bież."/>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="Filtr:"/>
+                                    <ComboBox Grid.Column="1">
+                                        <ComboBoxItem Content="!KŚT"/>
+                                        <ComboBoxItem Content="Niezlikwidowane"/>
+                                    </ComboBox>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="100"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Księga:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="1">
+                                    <syncfusion:ComboBoxItemAdv Content="ALL"/>
+                                    <syncfusion:ComboBoxItemAdv Content="ŚT"/>
+                                    <syncfusion:ComboBoxItemAdv Content="WNIP"/>
+                                    <syncfusion:ComboBoxItemAdv Content="WYPOS"/>
+                                </syncfusion:ComboBoxAdv>
+                                <TextBlock Grid.Column="2" Text="Miesiąc:"/>
+                                <syncfusion:UpDown Grid.Column="3"/>
+                                <TextBlock Grid.Column="4" Text="/"/>
+                                <syncfusion:UpDown Grid.Column="5"/>
+                                <TextBlock Grid.Column="6" Text="Data dok.:"/>
+                                <DatePicker Grid.Column="7"/>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="150"/>
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Grid.Column="0"/>
+                                <TextBlock Grid.Column="1" Text="Archiwalna"/>
+                                <TextBlock Grid.Column="3" Text="Status:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="4">
+                                    <syncfusion:ComboBoxItemAdv Content="Wszystkie"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Aktywne nieumorzone, niezamortyzowane"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Aktywne nieumorzone"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Aktywne niezamortyzowane"/>
+                                </syncfusion:ComboBoxAdv>
+                                <TextBlock Grid.Column="5" Text="Stan:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="6">
+                                    <syncfusion:ComboBoxItemAdv Content="Wszystkie"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Niezlikwidowane"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Zlikwidowane"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Obce"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Własne"/>
+                                </syncfusion:ComboBoxAdv>
+                            </Grid>
+                            <Grid Grid.Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="150"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Waluta:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="1">
+                                    <syncfusion:ComboBoxItemAdv Content="PLN"/>
+                                    <syncfusion:ComboBoxItemAdv Content="EUR"/>
+                                    <syncfusion:ComboBoxItemAdv Content="USD"/>
+                                </syncfusion:ComboBoxAdv>
+                                <TextBlock Grid.Column="2" Text="Wartosć w walucie:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="3">
+                                    <syncfusion:ComboBoxItemAdv Content="Środka trwalego"/>
+                                </syncfusion:ComboBoxAdv>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </TabItem>
+            <TabItem Header="Odpisy">
+                <Border BorderBrush="Black" BorderThickness="2" Margin="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <DataGrid Grid.Row="0" AutoGenerateColumns="True" GridLinesVisibility="All">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Akronim"/>
+                                <DataGridTextColumn Header="Księga"/>
+                                <DataGridTextColumn Header="Nr inw."/>
+                                <DataGridTextColumn Header="Am. bilansowa"/>
+                                <DataGridTextColumn Header="Am.podatkowa"/>
+                                <DataGridTextColumn Header="Nazwa"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Filtr:    "/>
+                                <syncfusion:ComboBoxAdv Grid.Column="1">
+                                    <syncfusion:ComboBoxItemAdv Content="!KŚT"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Niezlikwidowane"/>
+                                </syncfusion:ComboBoxAdv>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="100"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Księga:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="1">
+                                    <syncfusion:ComboBoxItemAdv Content="ALL"/>
+                                    <syncfusion:ComboBoxItemAdv Content="ŚT"/>
+                                    <syncfusion:ComboBoxItemAdv Content="WNIP"/>
+                                    <syncfusion:ComboBoxItemAdv Content="WYPOS"/>
+                                </syncfusion:ComboBoxAdv>
+                                <TextBlock Grid.Column="2" Text="Miesiąc:"/>
+                                <syncfusion:UpDown Grid.Column="3"/>
+                                <TextBlock Grid.Column="4" Text="/"/>
+                                <syncfusion:UpDown Grid.Column="5"/>
+                                <TextBlock Grid.Column="6" Text="Data dok.:"/>
+                                <DatePicker Grid.Column="7"/>
+                            </Grid>
+                            <Grid Grid.Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="150"/>
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Grid.Column="0"/>
+                                <TextBlock Grid.Column="1" Text="Archiwalna"/>
+                                <TextBlock Grid.Column="3" Text="Status:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="4">
+                                    <syncfusion:ComboBoxItemAdv Content="Wszystkie"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Aktywne nieumorzone, niezamortyzowane"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Aktywne nieumorzone"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Aktywne niezamortyzowane"/>
+                                </syncfusion:ComboBoxAdv>
+                                <TextBlock Grid.Column="5" Text="Stan:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="6">
+                                    <syncfusion:ComboBoxItemAdv Content="Wszystkie"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Niezlikwidowane"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Zlikwidowane"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Obce"/>
+                                    <syncfusion:ComboBoxItemAdv Content="Własne"/>
+                                </syncfusion:ComboBoxAdv>
+                            </Grid>
+                            <Grid Grid.Row="3">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="150"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Waluta:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="1">
+                                    <syncfusion:ComboBoxItemAdv Content="PLN"/>
+                                    <syncfusion:ComboBoxItemAdv Content="EUR"/>
+                                    <syncfusion:ComboBoxItemAdv Content="USD"/>
+                                </syncfusion:ComboBoxAdv>
+                                <TextBlock Grid.Column="2" Text="Wartosć w walucie:"/>
+                                <syncfusion:ComboBoxAdv Grid.Column="3">
+                                    <syncfusion:ComboBoxItemAdv Content="Środka trwalego"/>
+                                </syncfusion:ComboBoxAdv>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </TabItem>
+            <TabItem Header="Generacja">
+                <Border BorderBrush="Black" BorderThickness="2" Margin="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <DataGrid Grid.Row="0" AutoGenerateColumns="True" GridLinesVisibility="All">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Akronim"/>
+                                <DataGridTextColumn Header="Księga"/>
+                                <DataGridTextColumn Header="Nr inw."/>
+                                <DataGridTextColumn Header="KŚT"/>
+                                <DataGridTextColumn Header="Data przjy."/>
+                                <DataGridTextColumn Header="Nazwa"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Filtr:    "/>
+                            <syncfusion:ComboBoxAdv Grid.Column="1">
+                                <syncfusion:ComboBoxItemAdv Content="!KŚT"/>
+                                <syncfusion:ComboBoxItemAdv Content="Niezlikwidowane"/>
+                            </syncfusion:ComboBoxAdv>
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Księga:   "/>
+                            <syncfusion:ComboBoxAdv Grid.Column="1">
+                                <syncfusion:ComboBoxItemAdv Content="All"/>
+                                <syncfusion:ComboBoxItemAdv Content="ŚT"/>
+                                <syncfusion:ComboBoxItemAdv Content="WNIP"/>
+                                <syncfusion:ComboBoxItemAdv Content="WYPOS"/>
+                            </syncfusion:ComboBoxAdv>
+                        </Grid>
+                        <Grid Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="150"/>
+                            </Grid.ColumnDefinitions>
+                            <CheckBox Grid.Column="0"/>
+                            <TextBlock Grid.Column="1" Text="Archiwalna     "/>
+                            <TextBlock Grid.Column="2" Text="Status: "/>
+                            <syncfusion:ComboBoxAdv Grid.Column="3">
+                                <syncfusion:ComboBoxItemAdv Content="Wszystkie"/>
+                                <syncfusion:ComboBoxItemAdv Content="Aktywne nieumorzone, niezamortyzowane"/>
+                                <syncfusion:ComboBoxItemAdv Content="Aktywne nieumorzone"/>
+                                <syncfusion:ComboBoxItemAdv Content="Aktywne niezamortyzowane"/>
+                            </syncfusion:ComboBoxAdv>
+                            <TextBlock Grid.Column="4" Text="Stan: "/>
+                            <syncfusion:ComboBoxAdv Grid.Column="5">
+                                <syncfusion:ComboBoxItemAdv Content="Wszystkie"/>
+                                <syncfusion:ComboBoxItemAdv Content="Niezlikwidowane"/>
+                                <syncfusion:ComboBoxItemAdv Content="Zlikwidowane"/>
+                                <syncfusion:ComboBoxItemAdv Content="Własne"/>
+                                <syncfusion:ComboBoxItemAdv Content="Obce"/>
+                            </syncfusion:ComboBoxAdv>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -39,15 +40,39 @@ namespace PROJEKT.Views
             ClearWorkspace(sender, e);
             Workspace.Content = new KontrahenciView();
         }
+        
+
+        private void DokumentyView(object sender, RoutedEventArgs e)
+        {
+            ClearWorkspace(sender, e);
+            Workspace.Content = new DokumentyView();
+        }
         private void TowaryView(object sender, RoutedEventArgs e)
         {
             ClearWorkspace(sender, e);
             Workspace.Content = new TowaryView();
         }
+        private void MagazynyView(object sender, RoutedEventArgs e)
+        {
+            ClearWorkspace(sender, e);
+            Workspace.Content = new MagazynyView();
+        }
         private void ClearWorkspace(object sender, RoutedEventArgs e)
         {
             Workspace.Content = null;
             Workspace.NavigationService.RemoveBackEntry();
+        }
+
+        private void KsiegaInwentarzowaView(object sender, RoutedEventArgs e)
+        {
+            ClearWorkspace(sender, e);
+            Workspace.Content = new KsiegaInwentarzowaView();
+        }
+
+        private void TabelaAmortyzacjiView(object sender, RoutedEventArgs e)
+        {
+            ClearWorkspace(sender, e);
+            Workspace.Content = new TabelaAmortyzacjiView();
         }
 
     }

@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "PROJEKT/1.0.0": {
         "dependencies": {
-          "MaterialDesignThemes": "4.9.0"
+          "MaterialDesignThemes": "4.9.0",
+          "Syncfusion.Shared.WPF": "21.2.10"
         },
         "runtime": {
           "PROJEKT.dll": {}
@@ -41,6 +42,25 @@
             "fileVersion": "1.1.39.4716"
           }
         }
+      },
+      "Syncfusion.Licensing/21.2.10": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "21.2.10.0",
+            "fileVersion": "21.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/21.2.10": {
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "assemblyVersion": "21.2.10.0",
+            "fileVersion": "21.2.10.0"
+          }
+        }
       }
     }
   },
@@ -70,6 +90,20 @@
       "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
       "path": "microsoft.xaml.behaviors.wpf/1.1.39",
       "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/21.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4rVUsFp5OrxQZYrM5P1Qpvle3rmtT8Aa12McU8MeZntNSxYC4i925sEoKaX6muPuWHuF3PHDY5pLibDzoKm0dQ==",
+      "path": "syncfusion.licensing/21.2.10",
+      "hashPath": "syncfusion.licensing.21.2.10.nupkg.sha512"
+    },
+    "Syncfusion.Shared.WPF/21.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b922XUh0gBK4hsb4IvhpQW61yvejBZSGhzNpE3ceCKidVZA+ftCSqlmPEwA+5FgqWjQrQbrgHHMKObUe6sax8w==",
+      "path": "syncfusion.shared.wpf/21.2.10",
+      "hashPath": "syncfusion.shared.wpf.21.2.10.nupkg.sha512"
     }
   }
 }
