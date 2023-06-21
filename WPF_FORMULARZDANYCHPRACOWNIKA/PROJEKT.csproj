@@ -8,18 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Windows\MainWindows\MainWindow - Copy.xaml.cs" />
-    <Compile Remove="Windows\SubWindows\Dane_Firmy_kopia.xaml.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Remove="ViewResources\Icons\Dodaj.png" />
+    <None Remove="ViewResources\Icons\dokumenty.png" />
+    <None Remove="ViewResources\Icons\Glosnik.png" />
     <None Remove="ViewResources\Icons\kontrahenci.png" />
-    <None Remove="ViewResources\Icons\Speaker.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Remove="Windows\MainWindows\MainWindow - Copy.xaml" />
-    <Page Remove="Windows\SubWindows\Dane_Firmy_kopia.xaml" />
+    <None Remove="ViewResources\Icons\Ksiega_Inwentarzowa.png" />
+    <None Remove="ViewResources\Icons\KST.png" />
+    <None Remove="ViewResources\Icons\Magazyny.png" />
+    <None Remove="ViewResources\Icons\Samochody.png" />
+    <None Remove="ViewResources\Icons\Tabela_Amortyzacji.png" />
+    <None Remove="ViewResources\Icons\Terminarz.png" />
+    <None Remove="ViewResources\Icons\towary.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,18 +26,26 @@
     <Folder Include="Resources\" />
     <Folder Include="ViewResources\Fonts\" />
     <Folder Include="ViewResources\Images\" />
-    <Folder Include="Windows\MainWindows\" />
-    <Folder Include="Windows\SubWindows\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Syncfusion.SfScheduler.WPF" Version="21.2.10" />
     <PackageReference Include="Syncfusion.Shared.WPF" Version="21.2.10" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="ViewResources\Icons\kontrahenci.png" />
-    <Resource Include="ViewResources\Icons\Speaker.png" />
+    <Resource Include="ViewResources\Icons\Dodaj.png" />
+    <Resource Include="ViewResources\Icons\Dokumenty.png" />
+    <Resource Include="ViewResources\Icons\Kontrahenci.png" />
+    <Resource Include="ViewResources\Icons\Glosnik.png" />
+    <Resource Include="ViewResources\Icons\Ksiega_Inwentarzowa.png" />
+    <Resource Include="ViewResources\Icons\KST.png" />
+    <Resource Include="ViewResources\Icons\Magazyny.png" />
+    <Resource Include="ViewResources\Icons\Samochody.png" />
+    <Resource Include="ViewResources\Icons\Tabela_Amortyzacji.png" />
+    <Resource Include="ViewResources\Icons\Terminarz.png" />
+    <Resource Include="ViewResources\Icons\Towary.png" />
   </ItemGroup>
 
 </Project>

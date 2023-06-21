@@ -17,8 +17,8 @@
                         </Grid.RowDefinitions>
                         <Border Grid.Row="0">
                             <Grid>
-                                <DatePicker Width="150" Height="65" HorizontalAlignment="Left" Style="{DynamicResource MaterialDesignOutlinedDatePicker}"/>
-                            <Button Content="Szukaj" MaxWidth="250" MaxHeight="45" HorizontalAlignment="Right" Style="{DynamicResource MaterialDesignPaperLightButton}"/>
+                            <DatePicker HorizontalAlignment="Left"/>
+                            <Button Content="Szukaj" HorizontalAlignment="Right"/>
                             </Grid>
                         </Border>
                         <Border Grid.Row="1" Margin="2" BorderThickness="1" BorderBrush="Black">

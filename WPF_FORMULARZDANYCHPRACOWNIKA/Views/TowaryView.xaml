@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PROJEKT.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="800" d:DesignWidth="1080">
+             d:DesignHeight="900" d:DesignWidth="1920">
     
     <Grid>
         <Grid.RowDefinitions>
@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
 
         <TabControl Grid.Row="0">
-            <TabItem Header="Znajdź" Style="{DynamicResource MaterialDesignHeaderedContentControl}">
+            <TabItem Header="Towary" Style="{DynamicResource MaterialDesignHeaderedContentControl}">
                 <Border BorderBrush="Black" BorderThickness="2" Margin="2">
                 <Grid Margin="2">
                     <Grid.RowDefinitions>
@@ -25,17 +25,17 @@
                     <Grid Grid.Row="0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="auto"/>
                             <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="4*"/>
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
-                            <RowDefinition Height="30"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" Text="Kod/EAN:"/>
                         <TextBlock Grid.Row="1" Grid.Column="0" Text="Nazwa:"/>
@@ -46,9 +46,9 @@
                         <TextBox Grid.Row="2" Grid.Column="1"/>
                         <Grid Grid.Row="3" Grid.Column="1">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
                             <ComboBox Grid.Column="0">
                                 <ComboBoxItem Content="ean"/>
@@ -167,10 +167,10 @@
                                 <TextBlock Grid.Row="3" Grid.Column="1" Text="Archiwalne"/>
                                 <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="40"/>
-                                        <ColumnDefinition Width="1*"/>
-                                        <ColumnDefinition Width="40"/>
-                                        <ColumnDefinition Width="1*"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
                                     </Grid.ColumnDefinitions>
                                     <CheckBox Grid.Column="0"/>
                                     <TextBlock Grid.Column="1" Text="Stany"/>
@@ -178,7 +178,7 @@
                                     <TextBlock Grid.Column="3" Text="Dostępne"/>
                                 </Grid>
                             </Grid>
-                            <Button Grid.Column="2" Content="Szukaj" MaxWidth="250" MaxHeight="50" Style="{DynamicResource MaterialDesignPaperLightButton}"/>
+                            <Button Grid.Column="2" Content="Szukaj" MaxWidth="250" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}"/>
                         </Grid>
                     </Grid>
                 </Border>

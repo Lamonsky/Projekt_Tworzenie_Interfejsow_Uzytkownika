@@ -9,6 +9,7 @@
       "PROJEKT/1.0.0": {
         "dependencies": {
           "MaterialDesignThemes": "4.9.0",
+          "Syncfusion.SfScheduler.WPF": "21.2.10",
           "Syncfusion.Shared.WPF": "21.2.10"
         },
         "runtime": {
@@ -51,12 +52,74 @@
           }
         }
       },
+      "Syncfusion.SfBusyIndicator.WPF/21.2.10": {
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll": {
+            "assemblyVersion": "21.2.10.0",
+            "fileVersion": "21.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.SfInput.WPF/21.2.10": {
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10",
+          "Syncfusion.Shared.WPF": "21.2.10"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "assemblyVersion": "21.2.10.0",
+            "fileVersion": "21.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.SfScheduler.WPF/21.2.10": {
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10",
+          "Syncfusion.SfBusyIndicator.WPF": "21.2.10",
+          "Syncfusion.SfInput.WPF": "21.2.10",
+          "Syncfusion.SfSkinManager.WPF": "21.2.10",
+          "Syncfusion.Shared.WPF": "21.2.10",
+          "Syncfusion.Themes.MaterialLight.WPF": "21.2.10"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.dll": {
+            "assemblyVersion": "21.2.10.0",
+            "fileVersion": "21.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.SfSkinManager.WPF/21.2.10": {
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "assemblyVersion": "21.2.10.0",
+            "fileVersion": "21.2.10.0"
+          }
+        }
+      },
       "Syncfusion.Shared.WPF/21.2.10": {
         "dependencies": {
           "Syncfusion.Licensing": "21.2.10"
         },
         "runtime": {
           "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "assemblyVersion": "21.2.10.0",
+            "fileVersion": "21.2.10.0"
+          }
+        }
+      },
+      "Syncfusion.Themes.MaterialLight.WPF/21.2.10": {
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10",
+          "Syncfusion.SfSkinManager.WPF": "21.2.10"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLight.WPF.dll": {
             "assemblyVersion": "21.2.10.0",
             "fileVersion": "21.2.10.0"
           }
@@ -98,12 +161,47 @@
       "path": "syncfusion.licensing/21.2.10",
       "hashPath": "syncfusion.licensing.21.2.10.nupkg.sha512"
     },
+    "Syncfusion.SfBusyIndicator.WPF/21.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GivIxV65qdTyGXlkQtMoOWj4ms3bt9ejUd3dd9H3R6EBw6VVSs9NKcPXvGe5vldApscJqiDN9GwklYoCqKd+Bw==",
+      "path": "syncfusion.sfbusyindicator.wpf/21.2.10",
+      "hashPath": "syncfusion.sfbusyindicator.wpf.21.2.10.nupkg.sha512"
+    },
+    "Syncfusion.SfInput.WPF/21.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZGLMf6qVuEZblnb6x1/y6QM6GqAX/OLBwc2Cm2aaDKqtP8gFrdU3t5jS0L3z6DrcW9QaWcy/be/NE2DmV/12cw==",
+      "path": "syncfusion.sfinput.wpf/21.2.10",
+      "hashPath": "syncfusion.sfinput.wpf.21.2.10.nupkg.sha512"
+    },
+    "Syncfusion.SfScheduler.WPF/21.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HSx9bhXPaa/ksnp5rxZtt5/AGXKRNc9ABd3GbeqZT71fTrlJLIejRsRfN4xZ3RSYZpDtUqtIzW/1kI7giYBb+Q==",
+      "path": "syncfusion.sfscheduler.wpf/21.2.10",
+      "hashPath": "syncfusion.sfscheduler.wpf.21.2.10.nupkg.sha512"
+    },
+    "Syncfusion.SfSkinManager.WPF/21.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kn4LTMguyA8frXK3gAc/avV87j1vJqPdVymAwUWJn74/nkFmCuDVP0gfj4jftTHMLJU6/M4bPaM4x6kwCejl9A==",
+      "path": "syncfusion.sfskinmanager.wpf/21.2.10",
+      "hashPath": "syncfusion.sfskinmanager.wpf.21.2.10.nupkg.sha512"
+    },
     "Syncfusion.Shared.WPF/21.2.10": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-b922XUh0gBK4hsb4IvhpQW61yvejBZSGhzNpE3ceCKidVZA+ftCSqlmPEwA+5FgqWjQrQbrgHHMKObUe6sax8w==",
       "path": "syncfusion.shared.wpf/21.2.10",
       "hashPath": "syncfusion.shared.wpf.21.2.10.nupkg.sha512"
+    },
+    "Syncfusion.Themes.MaterialLight.WPF/21.2.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3MgNaOceyDb56LuLHvY1Ml/ROJUsZWM6s0leIdrD14pBalHeexE/FF+6WzdNay68zapEkgCifWFhs9HuHOYgkg==",
+      "path": "syncfusion.themes.materiallight.wpf/21.2.10",
+      "hashPath": "syncfusion.themes.materiallight.wpf.21.2.10.nupkg.sha512"
     }
   }
 }

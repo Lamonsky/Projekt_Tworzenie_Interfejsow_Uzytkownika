@@ -1,14 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "CX73rPLd9Qm3K1oqP+BFBe12Bge3y2hTGGvO07S9Le3R6cEBTZkxKNRWAFiIez0gfpGrySrBZpvl1B2Xa9/ixQ==",
+  "dgSpecHash": "Fx+LrzGR4dnx0FBOC2vgyU3zfwf4O/wf0rGiRWunBpz59X2NBxbgYNIDpYH8Mkzngo6dsNJzuEoQOkqpgsZSMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\damia\\Documents\\GitHub\\Projekt_Tworzenie_Interfejsow_Uzytkownika\\WPF_FORMULARZDANYCHPRACOWNIKA\\PROJEKT.csproj",
+  "projectFilePath": "C:\\Users\\damia\\Documents\\GitHub\\c#_programming_project\\Projekt_Tworzenie_Interfejsow_Uzytkownika\\WPF_FORMULARZDANYCHPRACOWNIKA\\PROJEKT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\damia\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
     "C:\\Users\\damia\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
     "C:\\Users\\damia\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
     "C:\\Users\\damia\\.nuget\\packages\\syncfusion.licensing\\21.2.10\\syncfusion.licensing.21.2.10.nupkg.sha512",
-    "C:\\Users\\damia\\.nuget\\packages\\syncfusion.shared.wpf\\21.2.10\\syncfusion.shared.wpf.21.2.10.nupkg.sha512"
+    "C:\\Users\\damia\\.nuget\\packages\\syncfusion.sfbusyindicator.wpf\\21.2.10\\syncfusion.sfbusyindicator.wpf.21.2.10.nupkg.sha512",
+    "C:\\Users\\damia\\.nuget\\packages\\syncfusion.sfinput.wpf\\21.2.10\\syncfusion.sfinput.wpf.21.2.10.nupkg.sha512",
+    "C:\\Users\\damia\\.nuget\\packages\\syncfusion.sfscheduler.wpf\\21.2.10\\syncfusion.sfscheduler.wpf.21.2.10.nupkg.sha512",
+    "C:\\Users\\damia\\.nuget\\packages\\syncfusion.sfskinmanager.wpf\\21.2.10\\syncfusion.sfskinmanager.wpf.21.2.10.nupkg.sha512",
+    "C:\\Users\\damia\\.nuget\\packages\\syncfusion.shared.wpf\\21.2.10\\syncfusion.shared.wpf.21.2.10.nupkg.sha512",
+    "C:\\Users\\damia\\.nuget\\packages\\syncfusion.themes.materiallight.wpf\\21.2.10\\syncfusion.themes.materiallight.wpf.21.2.10.nupkg.sha512"
   ],
   "logs": []
 }

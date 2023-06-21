@@ -60,6 +60,76 @@
           "lib/net6.0-windows7.0/Syncfusion.Licensing.dll": {}
         }
       },
+      "Syncfusion.SfBusyIndicator.WPF/21.2.10": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.SfInput.WPF/21.2.10": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10",
+          "Syncfusion.Shared.WPF": "21.2.10"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.SfScheduler.WPF/21.2.10": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10",
+          "Syncfusion.SfBusyIndicator.WPF": "21.2.10",
+          "Syncfusion.SfInput.WPF": "21.2.10",
+          "Syncfusion.SfSkinManager.WPF": "21.2.10",
+          "Syncfusion.Shared.WPF": "21.2.10",
+          "Syncfusion.Themes.MaterialLight.WPF": "21.2.10"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.SfSkinManager.WPF/21.2.10": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Shared.WPF/21.2.10": {
         "type": "package",
         "dependencies": {
@@ -72,6 +142,23 @@
         },
         "runtime": {
           "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Themes.MaterialLight.WPF/21.2.10": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.10",
+          "Syncfusion.SfSkinManager.WPF": "21.2.10"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLight.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLight.WPF.dll": {
             "related": ".xml"
           }
         }
@@ -195,6 +282,159 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.SfBusyIndicator.WPF/21.2.10": {
+      "sha512": "GivIxV65qdTyGXlkQtMoOWj4ms3bt9ejUd3dd9H3R6EBw6VVSs9NKcPXvGe5vldApscJqiDN9GwklYoCqKd+Bw==",
+      "type": "package",
+      "path": "syncfusion.sfbusyindicator.wpf/21.2.10",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net40/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.SfBusyIndicator.WPF.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.SfBusyIndicator.Wpf.VisualStudio.Design.dll",
+        "lib/net40/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net40/Syncfusion.SfBusyIndicator.WPF.xml",
+        "lib/net45/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net45/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net45/Design/Syncfusion.SfBusyIndicator.WPF.Expression.Design.dll",
+        "lib/net45/Design/Syncfusion.SfBusyIndicator.Wpf.VisualStudio.Design.dll",
+        "lib/net45/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net45/Syncfusion.SfBusyIndicator.WPF.xml",
+        "lib/net451/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net451/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net451/Design/Syncfusion.SfBusyIndicator.WPF.Expression.Design.dll",
+        "lib/net451/Design/Syncfusion.SfBusyIndicator.Wpf.VisualStudio.Design.dll",
+        "lib/net451/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net451/Syncfusion.SfBusyIndicator.WPF.xml",
+        "lib/net46/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net46/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net46/Design/Syncfusion.SfBusyIndicator.WPF.Expression.Design.dll",
+        "lib/net46/Design/Syncfusion.SfBusyIndicator.Wpf.VisualStudio.Design.dll",
+        "lib/net46/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net46/Syncfusion.SfBusyIndicator.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.xml",
+        "syncfusion.sfbusyindicator.wpf.21.2.10.nupkg.sha512",
+        "syncfusion.sfbusyindicator.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.SfInput.WPF/21.2.10": {
+      "sha512": "ZGLMf6qVuEZblnb6x1/y6QM6GqAX/OLBwc2Cm2aaDKqtP8gFrdU3t5jS0L3z6DrcW9QaWcy/be/NE2DmV/12cw==",
+      "type": "package",
+      "path": "syncfusion.sfinput.wpf/21.2.10",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net40/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net40/Syncfusion.SfInput.WPF.dll",
+        "lib/net40/Syncfusion.SfInput.WPF.xml",
+        "lib/net45/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net45/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net45/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net45/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net45/Syncfusion.SfInput.WPF.dll",
+        "lib/net45/Syncfusion.SfInput.WPF.xml",
+        "lib/net451/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net451/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net451/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net451/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net451/Syncfusion.SfInput.WPF.dll",
+        "lib/net451/Syncfusion.SfInput.WPF.xml",
+        "lib/net46/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net46/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net46/Design/Syncfusion.SfInput.WPF.Expression.Design.dll",
+        "lib/net46/Design/Syncfusion.SfInput.Wpf.VisualStudio.Design.dll",
+        "lib/net46/Syncfusion.SfInput.WPF.dll",
+        "lib/net46/Syncfusion.SfInput.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.xml",
+        "syncfusion.sfinput.wpf.21.2.10.nupkg.sha512",
+        "syncfusion.sfinput.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.SfScheduler.WPF/21.2.10": {
+      "sha512": "HSx9bhXPaa/ksnp5rxZtt5/AGXKRNc9ABd3GbeqZT71fTrlJLIejRsRfN4xZ3RSYZpDtUqtIzW/1kI7giYBb+Q==",
+      "type": "package",
+      "path": "syncfusion.sfscheduler.wpf/21.2.10",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.SfScheduler.WPF.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.SfScheduler.WPF.VisualStudio.Design.dll",
+        "lib/net40/Design/Syncfusion.SfScheduler.WPF.dll.Design.dll",
+        "lib/net40/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net40/Syncfusion.SfScheduler.WPF.xml",
+        "lib/net45/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net45/Design/Syncfusion.SfScheduler.WPF.Expression.Design.dll",
+        "lib/net45/Design/Syncfusion.SfScheduler.WPF.VisualStudio.Design.dll",
+        "lib/net45/Design/Syncfusion.SfScheduler.WPF.dll.Design.dll",
+        "lib/net45/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net45/Syncfusion.SfScheduler.WPF.xml",
+        "lib/net451/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net451/Design/Syncfusion.SfScheduler.WPF.Expression.Design.dll",
+        "lib/net451/Design/Syncfusion.SfScheduler.WPF.VisualStudio.Design.dll",
+        "lib/net451/Design/Syncfusion.SfScheduler.WPF.dll.Design.dll",
+        "lib/net451/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net451/Syncfusion.SfScheduler.WPF.xml",
+        "lib/net46/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net46/Design/Syncfusion.SfScheduler.WPF.Expression.Design.dll",
+        "lib/net46/Design/Syncfusion.SfScheduler.WPF.VisualStudio.Design.dll",
+        "lib/net46/Design/Syncfusion.SfScheduler.WPF.dll.Design.dll",
+        "lib/net46/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net46/Syncfusion.SfScheduler.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.xml",
+        "syncfusion.sfscheduler.wpf.21.2.10.nupkg.sha512",
+        "syncfusion.sfscheduler.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.SfSkinManager.WPF/21.2.10": {
+      "sha512": "kn4LTMguyA8frXK3gAc/avV87j1vJqPdVymAwUWJn74/nkFmCuDVP0gfj4jftTHMLJU6/M4bPaM4x6kwCejl9A==",
+      "type": "package",
+      "path": "syncfusion.sfskinmanager.wpf/21.2.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net40/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net45/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net45/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net451/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net451/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net46/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net46/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.xml",
+        "syncfusion.sfskinmanager.wpf.21.2.10.nupkg.sha512",
+        "syncfusion.sfskinmanager.wpf.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "Syncfusion.Shared.WPF/21.2.10": {
       "sha512": "b922XUh0gBK4hsb4IvhpQW61yvejBZSGhzNpE3ceCKidVZA+ftCSqlmPEwA+5FgqWjQrQbrgHHMKObUe6sax8w==",
       "type": "package",
@@ -241,33 +481,53 @@
         "syncfusion_logo.png",
         "tools/VisualStudioToolsManifest.xml"
       ]
+    },
+    "Syncfusion.Themes.MaterialLight.WPF/21.2.10": {
+      "sha512": "3MgNaOceyDb56LuLHvY1Ml/ROJUsZWM6s0leIdrD14pBalHeexE/FF+6WzdNay68zapEkgCifWFhs9HuHOYgkg==",
+      "type": "package",
+      "path": "syncfusion.themes.materiallight.wpf/21.2.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Syncfusion.Themes.MaterialLight.WPF.dll",
+        "lib/net40/Syncfusion.Themes.MaterialLight.WPF.xml",
+        "lib/net45/Syncfusion.Themes.MaterialLight.WPF.dll",
+        "lib/net45/Syncfusion.Themes.MaterialLight.WPF.xml",
+        "lib/net451/Syncfusion.Themes.MaterialLight.WPF.dll",
+        "lib/net451/Syncfusion.Themes.MaterialLight.WPF.xml",
+        "lib/net46/Syncfusion.Themes.MaterialLight.WPF.dll",
+        "lib/net46/Syncfusion.Themes.MaterialLight.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLight.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLight.WPF.xml",
+        "syncfusion.themes.materiallight.wpf.21.2.10.nupkg.sha512",
+        "syncfusion.themes.materiallight.wpf.nuspec",
+        "syncfusion_logo.png"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MaterialDesignThemes >= 4.9.0",
+      "Syncfusion.SfScheduler.WPF >= 21.2.10",
       "Syncfusion.Shared.WPF >= 21.2.10"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\damia\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\damia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\damia\\Documents\\GitHub\\Projekt_Tworzenie_Interfejsow_Uzytkownika\\WPF_FORMULARZDANYCHPRACOWNIKA\\PROJEKT.csproj",
+      "projectUniqueName": "C:\\Users\\damia\\Documents\\GitHub\\c#_programming_project\\Projekt_Tworzenie_Interfejsow_Uzytkownika\\WPF_FORMULARZDANYCHPRACOWNIKA\\PROJEKT.csproj",
       "projectName": "PROJEKT",
-      "projectPath": "C:\\Users\\damia\\Documents\\GitHub\\Projekt_Tworzenie_Interfejsow_Uzytkownika\\WPF_FORMULARZDANYCHPRACOWNIKA\\PROJEKT.csproj",
+      "projectPath": "C:\\Users\\damia\\Documents\\GitHub\\c#_programming_project\\Projekt_Tworzenie_Interfejsow_Uzytkownika\\WPF_FORMULARZDANYCHPRACOWNIKA\\PROJEKT.csproj",
       "packagesPath": "C:\\Users\\damia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\damia\\Documents\\GitHub\\Projekt_Tworzenie_Interfejsow_Uzytkownika\\WPF_FORMULARZDANYCHPRACOWNIKA\\obj\\",
+      "outputPath": "C:\\Users\\damia\\Documents\\GitHub\\c#_programming_project\\Projekt_Tworzenie_Interfejsow_Uzytkownika\\WPF_FORMULARZDANYCHPRACOWNIKA\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\damia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -297,6 +557,10 @@
             "target": "Package",
             "version": "[4.9.0, )"
           },
+          "Syncfusion.SfScheduler.WPF": {
+            "target": "Package",
+            "version": "[21.2.10, )"
+          },
           "Syncfusion.Shared.WPF": {
             "target": "Package",
             "version": "[21.2.10, )"
@@ -321,7 +585,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

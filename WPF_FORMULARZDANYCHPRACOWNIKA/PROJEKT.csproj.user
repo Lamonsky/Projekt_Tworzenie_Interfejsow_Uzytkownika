@@ -37,6 +37,9 @@
     <Compile Update="Views\TabelaAmortyzacjiView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\TerminarzView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\TowaryView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -73,6 +76,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\TabelaAmortyzacjiView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TerminarzView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\TowaryView.xaml">

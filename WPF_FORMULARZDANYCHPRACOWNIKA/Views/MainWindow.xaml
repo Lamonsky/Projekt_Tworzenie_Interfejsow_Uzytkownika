@@ -1,27 +1,23 @@
 ﻿<Window x:Class="PROJEKT.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PROJEKT.Views"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal"
         TextOptions.TextRenderingMode="Auto"
-        Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="ERP Lamonski" Height="1080" Width="1920" Loaded="Window_Loaded">
-
-
+        Title="ERP Lamonski" Height="1080" Width="1920" Loaded="Window_Loaded"
+        WindowState="Maximized">
 
     <Grid x:Name="grid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="20"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="15*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
@@ -33,14 +29,15 @@
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
+            
             <Menu Grid.Column="0">
                 <MenuItem Header="_System">
-                    <MenuItem Header="_Test"/>
+                    <MenuItem Header="_Opcje"/>
+                    <MenuItem Header="_Wyjdź" Click="MenuItem_Click"/>
                 </MenuItem>
             </Menu>
-
-            <TabControl Grid.Column="1" Grid.RowSpan="2">
+            <Expander Grid.Column="1" Grid.Row="0" IsExpanded="True">
+                <TabControl Grid.Column="1" Grid.Row="0" Grid.RowSpan="2">
                 <TabItem Header="Sprzedaż">
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -48,44 +45,30 @@
                             <ColumnDefinition Width="128"/>
                             <ColumnDefinition Width="128"/>
                             <ColumnDefinition Width="128"/>
-                            <ColumnDefinition Width="128"/>
-                            <ColumnDefinition Width="128"/>
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0"  Click="KontrahenciView" Height="120">
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="0"  Click="KontrahenciView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
                             <StackPanel>
-                                <Image Source="..\ViewResources\Icons\kontrahenci.png"/>
-                                <TextBlock HorizontalAlignment="Center">Kontrahenci</TextBlock>
+                                <Image Source="..\ViewResources\Icons\Kontrahenci.png"  Height="50"/>
+                                <TextBlock>Kontrahenci</TextBlock>
                             </StackPanel>
                         </Button>
-                        <Button Grid.Column="1" Click="TowaryView">
+                            <Button Grid.Column="1" Click="TowaryView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
                             <StackPanel>
+                                <Image Source="..\ViewResources\Icons\Towary.png" Height="50"/>
                                 <TextBlock>Towary</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
 
-                        <Button Grid.Column="2" Click="DokumentyView">
+                        <Button Grid.Column="2" Click="DokumentyView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
                             <StackPanel>
-                                <TextBlock>Dokumenty</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                                <Image Source="..\ViewResources\Icons\Dokumenty.png" Height="50"/>
+                                    <TextBlock>Dokumenty</TextBlock>
                             </StackPanel>
                         </Button>
-                        <Button Grid.Column="3" Click="MagazynyView">
+                            <Button Grid.Column="3" Click="MagazynyView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}" >
                             <StackPanel>
+                                <Image Source="..\ViewResources\Icons\Magazyny.png" Height="50"/>
                                 <TextBlock>Magazyny</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="4">
-                            <StackPanel>
-                                <TextBlock>Płatności</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Column="5">
-                            <StackPanel>
-                                <TextBlock>Zamówienia</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
                     </Grid>
@@ -97,58 +80,190 @@
                             <ColumnDefinition Width="128"/>
                             <ColumnDefinition Width="128"/>
                             <ColumnDefinition Width="128"/>
-                            <ColumnDefinition Width="30*"/>
-                            <ColumnDefinition Width="1423*"/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0" Click="KsiegaInwentarzowaView" Margin="0,21,0,21">
+                            <Button Grid.Column="0" Click="KsiegaInwentarzowaView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
                             <StackPanel>
-                                <TextBlock>Księga inwentarzowa</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
+                                <Image Source="..\ViewResources\Icons\Ksiega_Inwentarzowa.png" Height="50"/>
+                                <TextBlock>Księga inwent.</TextBlock>
                             </StackPanel>
 
                         </Button>
-                        <Button Grid.Column="1" Click="TabelaAmortyzacjiView" Margin="0,21,0,21">
+                            <Button Grid.Column="1" Click="TabelaAmortyzacjiView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
                             <StackPanel>
+                                <Image Source="..\ViewResources\Icons\Tabela_Amortyzacji.png" Height="50"/>
                                 <TextBlock>Tabela amortyzacji</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
-                        <Button Grid.Column="2" Click="MagazynyView" Margin="0,21,0,21">
+                            <Button Grid.Column="2" Click="TerminarzView" Height="120"  Style="{DynamicResource MaterialDesignPaperButton}">
                             <StackPanel>
+                                <Image Source="..\ViewResources\Icons\Terminarz.png" Height="50"/>
                                 <TextBlock>Terminarz</TextBlock>
-                                <!--<Image Source="..\..\Resources\Icons\towary.png"/>-->
                             </StackPanel>
                         </Button>
                     </Grid>
                 </TabItem>
+                    <TabItem Header="Wszystko">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                                <ColumnDefinition Width="128"/>
+                            </Grid.ColumnDefinitions>
+                            <Button Grid.Column="0"  Click="KontrahenciView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Kontrahenci.png"  Height="50"/>
+                                    <TextBlock  >Kontrahenci</TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Column="1" Click="TowaryView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Towary.png" Height="50"/>
+                                    <TextBlock>Towary</TextBlock>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Grid.Column="2" Click="DokumentyView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Dokumenty.png" Height="50"/>
+                                    <TextBlock>Dokumenty</TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Column="3" Click="MagazynyView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Magazyny.png" Height="50"/>
+                                    <TextBlock>Magazyny</TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Column="4" Click="KsiegaInwentarzowaView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Ksiega_Inwentarzowa.png" Height="50"/>
+                                    <TextBlock>Księga inwent.</TextBlock>
+                                </StackPanel>
+
+                            </Button>
+                            <Button Grid.Column="5" Click="TabelaAmortyzacjiView" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Tabela_Amortyzacji.png" Height="50"/>
+                                    <TextBlock>Tabela amortyzacji</TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Column="6" Click="TerminarzView" Height="120"  Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Terminarz.png" Height="50"/>
+                                    <TextBlock>Terminarz</TextBlock>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Grid.Column="7" Click="KST" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\KST.png" Height="50"/>
+                                    <TextBlock>KŚT</TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Column="8" Click="DaneKontrahentaWindow" Height="120" Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Dodaj.png" Height="50"/>
+                                    <TextBlock>Dodaj Kontrahenta</TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Column="9" Click="DodajSrodekTrwalyWindow" Height="120"  Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Dodaj.png" Height="50"/>
+                                    <TextBlock>Dodaj Środek Trwały</TextBlock>
+                                </StackPanel>
+                            </Button>
+                            <Button Grid.Column="10" Click="SamochodyWindow" Height="120"  Style="{DynamicResource MaterialDesignPaperButton}">
+                                <StackPanel>
+                                    <Image Source="..\ViewResources\Icons\Samochody.png" Height="50"/>
+                                    <TextBlock>Samochody</TextBlock>
+                                </StackPanel>
+                            </Button>
+                        </Grid>
+                    </TabItem>
             </TabControl>
+            </Expander>
         </Grid>
 
-        <Frame x:Name="Workspace" Grid.Row="2" NavigationUIVisibility="Hidden"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TreeView Grid.Column="0">
+                <TreeViewItem Header="Sprzedaż" IsExpanded="True">
+                    <Button Grid.Column="0"  Click="KontrahenciView" Height="50"  Style="{DynamicResource MaterialDesignPaperLightButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="..\ViewResources\Icons\Kontrahenci.png"/>
+                            <TextBlock  >Kontrahenci</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="1" Click="TowaryView" Height="50"  Style="{DynamicResource MaterialDesignPaperLightButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="..\ViewResources\Icons\Towary.png"/>
+                            <TextBlock  >Towary</TextBlock>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Grid.Column="2" Click="DokumentyView" Height="50"  Style="{DynamicResource MaterialDesignPaperLightButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="..\ViewResources\Icons\Dokumenty.png"/>
+                            <TextBlock  >Dokumenty</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="3" Click="MagazynyView" Height="50"  Style="{DynamicResource MaterialDesignPaperLightButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="..\ViewResources\Icons\Magazyny.png"/>
+                            <TextBlock  >Magazyny</TextBlock>
+                        </StackPanel>
+                    </Button>
+                </TreeViewItem>
+                <TreeViewItem Header="Środki Trwałe" IsExpanded="True">
+                    <Button Grid.Column="0" Click="KsiegaInwentarzowaView" Height="50"  Style="{DynamicResource MaterialDesignPaperLightButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="..\ViewResources\Icons\Ksiega_Inwentarzowa.png"/>
+                            <TextBlock  >Księga inwent.</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="1" Click="TabelaAmortyzacjiView" Height="50"  Style="{DynamicResource MaterialDesignPaperLightButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="..\ViewResources\Icons\Tabela_Amortyzacji.png"/>
+                            <TextBlock  >Tabela amortyzacji</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button Grid.Column="2" Click="TerminarzView" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="..\ViewResources\Icons\Terminarz.png"/>
+                            <TextBlock  >Terminarz</TextBlock>
+                        </StackPanel>
+                    </Button>
+                </TreeViewItem>
+            </TreeView>
+            <Frame x:Name="Workspace" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+        </Grid>
+
 
 
 
         <StatusBar Grid.Row="3" HorizontalAlignment="Right">
             <StatusBarItem>
-                <Border Margin="0">
+                <Border Margin="0" BorderBrush="Black" BorderThickness="1">
                     <TextBlock>WSB-NLU Damian Lamonski</TextBlock>
                 </Border>
             </StatusBarItem>
             <StatusBarItem>
-                <Border Margin="0">
+                <Border Margin="0" BorderBrush="Black" BorderThickness="1">
                     <TextBlock x:FieldModifier="private" x:Name="myDateTime"/>
                 </Border>
             </StatusBarItem>
         </StatusBar>
-
-
-
-
     </Grid>
-
-
-
-
-
 </Window>
     

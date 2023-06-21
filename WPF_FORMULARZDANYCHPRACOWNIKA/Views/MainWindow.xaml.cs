@@ -1,4 +1,5 @@
 ﻿using PROJEKT.Views;
+using Syncfusion.Windows.Controls.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -74,6 +75,49 @@ namespace PROJEKT.Views
             ClearWorkspace(sender, e);
             Workspace.Content = new TabelaAmortyzacjiView();
         }
+
+        private void TerminarzView(object sender, RoutedEventArgs e)
+        {
+            ClearWorkspace(sender, e);
+            Workspace.Content = new TerminarzView();
+        }
+
+        private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void DaneKontrahentaWindow(object sender, RoutedEventArgs e)
+        {
+            DaneKontrahentaWindow daneKontrahentaWindow = new DaneKontrahentaWindow();
+            daneKontrahentaWindow.Show();
+        }
+
+        private void KST(object sender, RoutedEventArgs e)
+        {
+            KSTWindow kstwindow= new KSTWindow();
+            kstwindow.Show();
+        }
+
+        private void DodajSrodekTrwalyWindow(object sender, RoutedEventArgs e)
+        {
+            DodajSrodekTrwalyWindow dodajsrodektrwaly= new DodajSrodekTrwalyWindow();
+            dodajsrodektrwaly.Show();
+        }
+
+
+        private void SamochodyWindow(object sender, RoutedEventArgs e)
+        {
+            SamochodWindow samochodywindow = new SamochodWindow();
+            samochodywindow.Show();
+        }
+
+
 
     }
 

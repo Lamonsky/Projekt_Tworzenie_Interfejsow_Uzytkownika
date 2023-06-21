@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
 
         <TabControl Grid.Row="0">
-            <TabItem Header="Znajdź" Style="{DynamicResource MaterialDesignHeaderedContentControl}">
+            <TabItem Header="Księga inwentarzowa" Style="{DynamicResource MaterialDesignHeaderedContentControl}">
                 <Border Grid.Row="1" Margin="2" BorderThickness="1" BorderBrush="Black">
                     <Grid>
                         <Grid.RowDefinitions>
@@ -24,19 +24,19 @@
                         </Grid.RowDefinitions>
                         <Grid Grid.Row="0" Margin="2">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="8*"/>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
                             </Grid.RowDefinitions>
                             <TextBlock Grid.Row="0" Grid.Column="0" Text="Akronim:"/>
                             <Grid Grid.Row="0" Grid.Column="1">
@@ -45,34 +45,34 @@
                                     <ColumnDefinition Width="50"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBox Grid.Column="0" Style="{DynamicResource MaterialDesignTextBoxBase}"/>
-                                <TextBlock Grid.Column="1" Text="Nr inw.:"/>
+                                <TextBox Grid.Column="0" />
+                                <TextBlock Grid.Column="1" Text="Nr inw.:" VerticalAlignment="Center"/>
                                 <syncfusion:UpDown Grid.Row="4" Grid.Column="3"/>
                             </Grid>
                             <TextBlock Grid.Row="0" Grid.Column="2" Text="Nr ewid:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBox Grid.Row="0" Grid.Column="3" Style="{DynamicResource MaterialDesignTextBoxBase}"/>
+                            <TextBox Grid.Row="0" Grid.Column="3" />
                             <TextBlock Grid.Row="1" Grid.Column="0" Text="Nazwa:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBox Grid.Row="1" Grid.Column="1" Style="{DynamicResource MaterialDesignTextBoxBase}"/>
+                            <TextBox Grid.Row="1" Grid.Column="1" />
                             <TextBlock Grid.Row="1" Grid.Column="2" Text="Opis:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBox Grid.Row="1" Grid.Column="3" Style="{DynamicResource MaterialDesignTextBoxBase}"/>
+                            <TextBox Grid.Row="1" Grid.Column="3" />
                             <TextBlock Grid.Row="2" Grid.Column="0" Text="Księga:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Grid Grid.Row="2" Grid.Column="1">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="75"/>
-                                    <ColumnDefinition Width="25"/>
-                                    <ColumnDefinition Width="75"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
                                 <ComboBox Grid.Column="0">
                                     <ComboBoxItem Content="ŚT - Środki Trwałe"/>
                                     <ComboBoxItem Content="WYPOS - Wyposażenie"/>
                                 </ComboBox>
                                 <CheckBox Grid.Column="1"/>
-                                <TextBlock Grid.Column="2" Text="Archiwalna"/>
+                                <TextBlock Grid.Column="2" Text="Archiwalna" VerticalAlignment="Center"/>
                             </Grid>
                             <Button Grid.Row="2" Grid.Column="2" Content="KŚT:" Style="{DynamicResource MaterialDesignPaperLightButton}" Click="KSTWindow"/>
                             <TextBox Grid.Row="2" Grid.Column="3"/>
                             <TextBlock Grid.Row="3" Grid.Column="0" Text="Miejsce:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <ComboBox Grid.Row="3" Grid.Column="1" Width="75" HorizontalAlignment="Left">
+                            <ComboBox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left">
                                 <ComboBoxItem Content="Centrala"/>
                                 <ComboBoxItem Content="Magazyn 1"/>
                                 <ComboBoxItem Content="Magazyn 2"/>
@@ -85,24 +85,24 @@
                             <syncfusion:UpDown Grid.Row="4" Grid.Column="3"/>
                             <Grid Grid.Row="5" Grid.Column="1">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="25"/>
-                                    <ColumnDefinition Width="75"/>
-                                    <ColumnDefinition Width="25"/>
-                                    <ColumnDefinition Width="75"/>
-                                    <ColumnDefinition Width="25"/>
-                                    <ColumnDefinition Width="75"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
                                 <CheckBox Grid.Column="0"/>
-                                <TextBlock Grid.Column="1" Text="Środki trw"/>
+                                <TextBlock Grid.Column="1" Text="Środki trw" VerticalAlignment="Center"/>
                                 <CheckBox Grid.Column="2"/>
-                                <TextBlock Grid.Column="3" Text="Niemat."/>
+                                <TextBlock Grid.Column="3" Text="Niemat." VerticalAlignment="Center"/>
                                 <CheckBox Grid.Column="4"/>
-                                <TextBlock Grid.Column="5" Text="Wypos."/>
+                                <TextBlock Grid.Column="5" Text="Wypos." VerticalAlignment="Center"/>
                             </Grid>
                             <Button Grid.Row="5" Grid.Column="2" Content="Data dok.:" Style="{DynamicResource MaterialDesignPaperLightButton}"/>
-                            <DatePicker Grid.Row="5" Grid.Column="3" Style="{DynamicResource MaterialDesignDatePicker}"/>
+                            <DatePicker Grid.Row="5" Grid.Column="3"/>
                             <TextBlock Grid.Row="6" Grid.Column="0" Text="Status:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <ComboBox Grid.Row="6" Grid.Column="1" Width="150" HorizontalAlignment="Left">
+                            <ComboBox Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left">
                                 <ComboBoxItem Content="Wszytkie"/>
                                 <ComboBoxItem Content="Aktywne niezamortyzowane"/>
                             </ComboBox>
@@ -132,8 +132,8 @@
                             </Grid>
                         </Border>
                         <Grid Grid.Row="2">
-                            <Button HorizontalAlignment="Left" Margin="20" Content="Dodaj Środek Trwały" MaxWidth="250" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}" Width="208" Click="DodajSrodekTrwalyWindow"/>
-                            <Button HorizontalAlignment="Right" Margin="20" Content="Szukaj" MaxWidth="250" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}" Width="208"/>
+                            <Button HorizontalAlignment="Left" Margin="20" Content="Dodaj Środek Trwały" MaxWidth="250" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}" Click="DodajSrodekTrwalyWindow"/>
+                            <Button HorizontalAlignment="Right" Margin="20" Content="Szukaj" MaxWidth="250" Height="50" Style="{DynamicResource MaterialDesignPaperLightButton}"/>
                         </Grid>
                     </Grid>
                 </Border>

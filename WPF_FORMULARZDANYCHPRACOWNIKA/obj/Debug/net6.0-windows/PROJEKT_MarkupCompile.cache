@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\
+C:\Users\damia\Documents\GitHub\c#_programming_project\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\obj\Debug\net6.0-windows\
 PROJEKT
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\damia\Documents\GitHub\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\App.xaml
-121000222001
+C:\Users\damia\Documents\GitHub\c#_programming_project\Projekt_Tworzenie_Interfejsow_Uzytkownika\WPF_FORMULARZDANYCHPRACOWNIKA\App.xaml
+131586502579
 
-131119525470
-199426039494
-ViewResources\Styles\ViewResources.xaml;Views\DaneKontrahentaWindow.xaml;Views\DodajSrodekTrwalyWindow.xaml;Views\DokumentyView.xaml;Views\KontrahenciView.xaml;Views\KsiegaInwentarzowaView.xaml;Views\KSTWindow.xaml;Views\MagazynyView.xaml;Views\MainWindow.xaml;Views\SamochodWindow.xaml;Views\TabelaAmortyzacjiView.xaml;Views\TowaryView.xaml;
+14-2031851539
+2041403661487
+ViewResources\Styles\ViewResources.xaml;Views\DaneKontrahentaWindow.xaml;Views\DodajSrodekTrwalyWindow.xaml;Views\DokumentyView.xaml;Views\KontrahenciView.xaml;Views\KsiegaInwentarzowaView.xaml;Views\KSTWindow.xaml;Views\MagazynyView.xaml;Views\MainWindow.xaml;Views\SamochodWindow.xaml;Views\TabelaAmortyzacjiView.xaml;Views\TerminarzView.xaml;Views\TowaryView.xaml;
 
 False
 
