@@ -41,6 +41,12 @@
         
     </Style>
 
+    <Style TargetType="{x:Type DatePickerTextBox}">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
     <Style TargetType="{x:Type ComboBox}">
         <Setter Property="Margin" Value="{StaticResource SmallThickness}" />
         <Setter Property="MinWidth" Value="150"/>
